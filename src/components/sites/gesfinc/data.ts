@@ -8,7 +8,7 @@ export const nav: NavItem[] = [
   { label: "Inicio", href: "/" },
   {
     label: "Empresa",
-    href: `${SOURCE}/empresa/`,
+    href: "/empresa",
     children: [
       { label: "¿Por qué Gesfinc?", href: `${SOURCE}/por-que-gesfinc-canarias/` },
       { label: "Recursos", href: `${SOURCE}/recursos-humanos-y-materiales/` },
@@ -17,7 +17,7 @@ export const nav: NavItem[] = [
   },
   {
     label: "Servicios",
-    href: `${SOURCE}/servicios/`,
+    href: "/servicios",
     children: [
       { label: "Servicio Integral", href: `${SOURCE}/servicios/servicio-integral/` },
       { label: "Administrador de Fincas", href: `${SOURCE}/servicios/administrador-de-fincas/` },
@@ -108,7 +108,7 @@ export const apps = {
 export const footerNav = [
   { label: "Inicio", href: "/" },
   { label: "Empresa", href: `${SOURCE}/por-que-gesfinc-canarias/` },
-  { label: "Servicios", href: `${SOURCE}/servicios/` },
+  { label: "Servicios", href: "/servicios" },
   { label: "Inmobiliaria", href: `${SOURCE}/inmobiliaria/` },
   { label: "Contactar", href: `${SOURCE}/contactar/` },
 ];

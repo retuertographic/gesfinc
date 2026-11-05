@@ -1,14 +1,31 @@
 # gesfinc.com — page brief
 
-Source: https://gesfinc.com/ (WordPress 6.9 + Elementor 3.33, theme "Avante"). Cloned scope: the home page only.
+Source: https://gesfinc.com/ (WordPress 6.9 + Elementor 3.33, theme "Avante"). Cloned scope: home, Servicios and Empresa.
 
 ## Route map
 
 | Source | Local | Files |
 | --- | --- | --- |
 | `https://gesfinc.com/` | `/` | `src/app/page.tsx`, `src/components/sites/gesfinc/*` |
+| `https://gesfinc.com/servicios/` | `/servicios` | `src/app/servicios/page.tsx`, `pages.css`, `info-form.tsx`, `scroll-drift.tsx` |
+| `https://gesfinc.com/empresa/` | `/empresa` | `src/app/empresa/page.tsx`, `pages.css` |
 
-Every other internal link (Empresa, Servicios, Noticias, blog posts, legal pages, search) still points at `https://gesfinc.com/...` because those pages were not cloned.
+Shared across all three: `header.tsx` (overlay variant for home/Servicios, white variant for Empresa), `shared.tsx` (Sala de Juntas band, footer, back-to-top, cookie dialog).
+
+Every other internal link (Noticias, individual service pages, blog posts, legal pages, search) still points at `https://gesfinc.com/...` because those pages were not cloned.
+
+## Servicios (/servicios)
+
+- Navy hero (`rgb(24,48,93)`, 780px) with a checklist of yellow chevrons, a photo and a red circle, and a 110px V divider.
+- Three alternating rows (Administración de Fincas, Servicio Integral, Asesoría Jurídica). Each photo drifts up 100px while scrolling ("scrollme" effect, measured: 0 → −100px as its top moves from the viewport bottom to 100px from the top; off on mobile).
+- "Otros servicios" grid: 4 columns, 25px rounded thumbnails, Roboto Slab titles. Two entries have no image on the source and show WordPress's generic file icon; reproduced.
+- "Petición de información" form. The source posts to WordPress; the clone validates the same required fields and then opens a pre-filled email to info@gesfinc.es.
+
+## Empresa (/empresa)
+
+- White header template: top bar with visible list bullets (a source CSS quirk, reproduced) and a nav that wraps onto two lines.
+- Sections: Quiénes Somos, Administración de Fincas (illustrations + dotted ovals), Asesoramiento Legal (full-bleed photo), Contactar con nosotros.
+- Headings ask for "Gilroy-ExtraBold", which the source never loads, so they render in Arial. The clone uses Arial on purpose. Body text is Karla.
 
 ## Sections (desktop 1440px, measured)
 
@@ -41,5 +58,8 @@ Every other internal link (Empresa, Servicios, Noticias, blog posts, legal pages
 - The source's "Sala de Juntas" button links to one specific Zoom meeting with a join token. The clone links to `/sala-de-juntas/` instead.
 - Not reproduced: the Elementor entrance animations ("smoove" rotate-in on the counter, headings and divider), the hero gallery's inner parallax, and the mouse-parallax on the illustrations.
 - On mobile the hero gallery's starting image and crop can differ: the source's Flickity start position varies between loads.
+- Servicios/Empresa: on mobile the source shows several images as broken placeholders (lazy-load bug). The clone shows the real images there.
+- Servicios/Empresa: entrance animations ("smoove") and the mouse parallax on the Empresa illustrations are not reproduced. Empresa's decorative photos don't drift on scroll.
+- Empresa's "Más información" and "Contactar" links point to broken URLs on the source (`/single-portfolio-2/`, `/single-portfolio-3/`, `/contact-1`). The clone links them to the real Administrador de Fincas, Asesoría Jurídica and Contactar pages.
 
 Screenshots: `src/` holds the source captures and `local/` the clone captures.
