@@ -1,20 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cabin, Covered_By_Your_Grace, Roboto, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"], weight: ["400", "500"] });
+const robotoSlab = Roboto_Slab({ variable: "--font-roboto-slab", subsets: ["latin"], weight: ["400", "500"] });
+const cabin = Cabin({ variable: "--font-cabin", subsets: ["latin"], weight: ["500", "700"] });
+const covered = Covered_By_Your_Grace({ variable: "--font-covered", subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Gesfinc Canarias – GESFINC: expertos en administracion de fincas",
+  description:
+    "Gesfinc Canarias, expertos en administración de fincas de comunidades de vecinos en La Orotava, Tenerife.",
+  icons: { icon: "/sites/gesfinc/images/Logo-Gesfinc.png" },
 };
 
 export default function RootLayout({
@@ -24,10 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="es"
+      className={`${roboto.variable} ${robotoSlab.variable} ${cabin.variable} ${covered.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
