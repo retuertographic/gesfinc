@@ -15,7 +15,7 @@ export default function PoliticaCookiesPage() {
   return (
     <BlogShell>
       <PageTitle title="Política de cookies (UE)" />
-      <div className="gf-bl-wrap gf-bl-legal gf-bl-legal--nofooter">
+      <div className="gf-bl-wrap gf-bl-legal">
         <div className="gf-bl-text gf-bl-doc">
           <div dangerouslySetInnerHTML={{ __html: cookiesBeforeConsentHtml }} />
           <ConsentManager />

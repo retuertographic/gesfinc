@@ -10,6 +10,7 @@
 
 /* The shared white header is 228px tall; the source's is 237px (and 162px on mobile vs 120px). */
 .gf-bl-top { height: 9px; }
+.gf-bl-appform .gf-bl-top { height: 0; }
 
 /* Theme content wrapper: 1425px max, 90px side padding → 1245px text column. */
 .gf-bl-wrap { max-width: 1425px; margin: 0 auto; padding: 0 90px; }
@@ -29,7 +30,6 @@
 .gf-bl-text a { color: #000; }
 .gf-bl-text a:hover { color: rgb(56, 57, 138); }
 .gf-bl-legal { padding-bottom: 0; }
-.gf-bl-legal--nofooter { padding-bottom: 40px; }
 
 /* Legal pages: the source loads the footer template without Elementor's shape-divider CSS, so its "tilt" divider
    renders in flow as a black wedge 140px below the band's top edge and pushes the content 110px down. */
@@ -56,7 +56,7 @@
 }
 .gf-bl-doc h2 { font-family: var(--gf-bl-cabin); font-weight: 700; font-size: 22px; line-height: 35.2px; margin: 15px 0 10px; padding-bottom: 10px; }
 .gf-bl-doc .cmplz-subtitle { font-weight: 700; margin-top: 25px; }
-.gf-bl-doc ul { list-style: disc; margin: 5px 0 15px 20px; }
+.gf-bl-doc ul { list-style: disc; margin: 5px 0 5px 20px; }
 .gf-bl-doc .cmplz-obfuscate span { display: none; }
 .gf-bl-doc details { background: rgba(239, 239, 239, 0.25); }
 .gf-bl-doc details[open] { padding-bottom: 1px; }
@@ -165,8 +165,8 @@
 .gf-bl-lightbox button svg { width: 20px; height: 24px; }
 
 /* ---------- Noticias archive ---------- */
-.gf-bl-archive { padding-bottom: 40px; }
-.gf-bl-card { margin-bottom: 60px; }
+.gf-bl-archive { padding-bottom: 80px; }
+.gf-bl-card { margin-bottom: 0; }
 .gf-bl-card-img { position: relative; display: block; overflow: hidden; background: #f9f9f9; margin-bottom: 20px; line-height: 0; }
 .gf-bl-card-img img { width: 100%; height: auto; transition: all 0.3s cubic-bezier(0.3, 0.58, 0.55, 1); }
 .gf-bl-card-img::before, .gf-bl-card-img::after {
@@ -177,7 +177,7 @@
 .gf-bl-card:hover .gf-bl-card-img img { transform: scale(1.07); opacity: 0.9; }
 .gf-bl-card:hover .gf-bl-card-img::before { left: 50%; opacity: 1; }
 .gf-bl-card:hover .gf-bl-card-img::after { top: 50%; opacity: 1; }
-.gf-bl-card-cat { margin-top: 5px; height: 30.19px; font-family: var(--gf-bl-slab); font-size: 14px; line-height: 25.2px; }
+.gf-bl-card-cat { padding-top: 5px; height: 35.19px; font-family: var(--gf-bl-slab); font-size: 14px; line-height: 25.2px; }
 .gf-bl-card-cat a { color: rgb(87, 185, 87); }
 .gf-bl-card h2 { margin: 0 0 10px; font-family: var(--gf-bl-cabin); font-weight: 700; font-size: 24px; line-height: 38.4px; }
 .gf-bl-card h2 a { color: rgb(34, 34, 34); transition: color 0.3s; }
@@ -227,7 +227,7 @@
 /* ---------- Responsive ---------- */
 @media (max-width: 1180px) {
   .gf-bl-top { height: 42px; }
-  .gf-bl-appform .gf-bl-top { height: 60px; }
+  .gf-bl-appform .gf-bl-top { height: 61px; }
 }
 @media (max-width: 1240px) {
   .gf-bl-body { margin-left: 90px; margin-right: 90px; }
@@ -240,7 +240,7 @@
 }
 @media (max-width: 767px) {
   .gf-bl-wrap { padding: 0 20px; }
-  .gf-bl-title { padding: 60px 20px; }
+  .gf-bl-archive { padding-bottom: 61px; }
   .gf-bl-title h1 { font-size: 28px; line-height: 33.6px; }
   .gf-bl-hero { margin-bottom: 100px; }
   .gf-bl-hero-text { width: 100%; padding: 0 30px; }
@@ -251,7 +251,7 @@
   .gf-bl-app { padding: 30px 20px 0; }
   .gf-bl-app-btns { flex-direction: column; }
   .gf-bl-pn { display: none; }
-  .gf-bl-form-wrap { padding: 10px 25px 57px; }
+  .gf-bl-form-wrap { padding: 10px 30px 57px; }
   .gf-bl-doc .cmplz-service-description, .gf-bl-doc .cmplz-sharing-data { width: 100%; box-sizing: border-box; }
   .gf-bl-doc .cookies-per-purpose { grid-template: none; grid-template-columns: 100px 1fr; }
   .gf-bl-doc .cookies-per-purpose .purpose { grid-area: auto; grid-column: span 2; }

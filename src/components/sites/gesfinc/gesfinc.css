@@ -260,7 +260,7 @@
 .gf-footer { background: #000; color: #fff; padding: 10px 0 34px; }
 .gf-footer .gf-container { display: grid; grid-template-columns: repeat(4, 1fr); }
 .gf-footer h3 { font-family: var(--gf-bold); font-weight: 700; font-size: 20px; line-height: 32px; margin-bottom: 30px; }
-.gf-footer-brand img { width: 130px; height: 130px; margin: 64px auto 20px; }
+.gf-footer-brand img { width: 130px; height: 130px; margin: 64px auto 31px; }
 .gf-footer-brand h2 { font-family: var(--gf-bold); font-weight: 600; font-size: 18px; line-height: 28.8px; }
 .gf-social { display: flex; gap: 5px; margin-top: 20px; margin-left: -10px; }
 .gf-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; color: #fff; transition: opacity 0.3s; }
@@ -271,8 +271,8 @@
 .gf-footer-links a:hover { color: #fff; }
 .gf-footer-contact { font-family: var(--gf-reg); font-size: 16px; line-height: 28.8px; }
 .gf-footer-contact address { font-style: normal; margin-top: 50px; }
-.gf-copy { background: #000; padding: 0 0 80px; }
-.gf-copy p { font-family: var(--gf-reg); font-size: 14px; line-height: 14px; color: rgba(255, 255, 255, 0.7); }
+.gf-copy { background: #000; padding: 0 0 86px; }
+.gf-copy p { font-family: var(--gf-reg); font-size: 14px; line-height: 17px; color: rgba(255, 255, 255, 0.7); }
 .gf-copy a:hover { color: #fff; }
 
 /* ---------- Floating UI ---------- */
@@ -383,14 +383,19 @@
   .gf-quote-by { left: 25px; top: 210px; }
   .gf-meeting { padding-top: 100px; }
   .gf-meeting-img img { width: 100%; height: auto; }
-  .gf-meeting-text { padding-top: 100px; }
+  .gf-meeting { padding-bottom: 22px; }
+  .gf-meeting-text { padding-top: 152px; }
   .gf-meeting-text h2 { font-size: 30px; line-height: 42px; }
-  .gf-meeting-text p { margin-top: 30px; }
+  .gf-meeting-text p { margin-top: 44px; }
   .gf-meeting-text .gf-btn { margin-top: 50px; }
   .gf-meeting-text p { text-align: left; }
-  .gf-footer .gf-container { grid-template-columns: 1fr; padding: 0 10px; }
+  .gf-footer .gf-container { grid-template-columns: 1fr; padding: 0 10px; row-gap: 19px; }
+  .gf-footer { padding-bottom: 15px; }
+  .gf-footer-brand h2 { max-width: 288px; }
+  .gf-footer-brand { padding-bottom: 20px; }
   .gf-footer-brand img { margin: 30px 0 20px 80px; }
   .gf-copy .gf-container { padding: 0 10px; }
-  .gf-copy p { line-height: 29px; }
+  .gf-copy { padding-bottom: 66px; }
+  .gf-copy .gf-container p { max-width: 324px; line-height: 23px; }
   .gf-cookie-btns { flex-direction: column; }
 }
