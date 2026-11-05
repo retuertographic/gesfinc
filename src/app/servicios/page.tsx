@@ -4,7 +4,7 @@ import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/pages.css";
 import { Header } from "@/components/sites/gesfinc/header";
 import { Icon } from "@/components/sites/gesfinc/icons";
-import { IMG, SOURCE } from "@/components/sites/gesfinc/data";
+import { IMG } from "@/components/sites/gesfinc/data";
 import { Shape, SiteFooter, V_SHAPE } from "@/components/sites/gesfinc/shared";
 import { ScrollDrift } from "@/components/sites/gesfinc/scroll-drift";
 import { InfoRequestForm } from "@/components/sites/gesfinc/info-form";
@@ -18,55 +18,55 @@ export const metadata: Metadata = {
 const heroList = [
   {
     label: "Administrador de Fincas",
-    href: `${SOURCE}/servicios/administrador-de-fincas/`,
+    href: "/servicios/administrador-de-fincas",
   },
   {
     label: "Servicio Integral",
-    href: `${SOURCE}/servicios/servicio-integral/`,
+    href: "/servicios/servicio-integral",
   },
   {
     label: "Asesoría Jurídica Integral",
-    href: `${SOURCE}/servicios/asesoria-juridica-integral/`,
+    href: "/servicios/asesoria-juridica-integral",
   },
-  { label: "Inmobiliaria", href: `${SOURCE}/inmobiliaria/` },
+  { label: "Inmobiliaria", href: "/inmobiliaria" },
   { label: "Otros servicios", href: "#otros-servicios" },
 ];
 
 const others: { title: string; href: string; image: string | null }[] = [
   {
     title: "Limpieza",
-    href: `${SOURCE}/servicios/limpieza/`,
+    href: "/servicios/limpieza",
     image: "GESFINC-170509-121-300x200-1.jpg",
   },
   {
     title: "Mantenimiento",
-    href: `${SOURCE}/servicios/mantenimiento/`,
+    href: "/servicios/mantenimiento",
     image: "GESFINC-170509-83-300x200-1.jpg",
   },
   {
     title: "Jardinería",
-    href: `${SOURCE}/servicios/jardineria/`,
+    href: "/servicios/jardineria",
     image: "DSC_1833-300x200-1.jpg",
   },
   {
     title: "Seguros",
-    href: `${SOURCE}/servicios/seguros/`,
+    href: "/servicios/seguros",
     image: "Seguro-WEB-700x460-1.jpg",
   },
   {
     title: "Inmobiliaria",
-    href: `${SOURCE}/inmobiliaria/`,
+    href: "/inmobiliaria",
     image: "Inmobiliaria-WEB-700x460-1.jpg",
   },
   // These two have no featured image on the source; WordPress shows its generic file icon instead.
   {
     title: "Certificados electrónicos",
-    href: `${SOURCE}/servicios/certificados-electronicos/`,
+    href: "/servicios/certificados-electronicos",
     image: null,
   },
   {
     title: "Certificaciones energéticas",
-    href: `${SOURCE}/servicios/certificaciones-energeticas/`,
+    href: "/servicios/certificaciones-energeticas",
     image: null,
   },
 ];
@@ -149,7 +149,7 @@ export default function ServiciosPage() {
               <li>Servicios</li>
             </ul>
           </div>
-          <MoreButton href={`${SOURCE}/servicios/administrador-de-fincas/`} />
+          <MoreButton href="/servicios/administrador-de-fincas" />
         </div>
         <div className="gf-sv-media">
           <ScrollDrift
@@ -201,7 +201,7 @@ export default function ServiciosPage() {
               servicios muy específicos o puntuales.
             </p>
           </div>
-          <MoreButton href={`${SOURCE}/servicios/servicio-integral/`} />
+          <MoreButton href="/servicios/servicio-integral" />
         </div>
       </section>
 
@@ -219,7 +219,7 @@ export default function ServiciosPage() {
             </p>
           </div>
           <MoreButton
-            href={`${SOURCE}/servicios/asesoria-juridica-integral/`}
+            href="/servicios/asesoria-juridica-integral"
           />
         </div>
         <div className="gf-sv-media">

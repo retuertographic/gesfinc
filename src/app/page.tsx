@@ -6,7 +6,7 @@ import {
   HeroGallery,
   ServicesCarousel,
 } from "@/components/sites/gesfinc/widgets";
-import { apps, IMG, posts, SOURCE } from "@/components/sites/gesfinc/data";
+import { apps, IMG, posts } from "@/components/sites/gesfinc/data";
 import {
   Arrow,
   Shape,
@@ -33,7 +33,7 @@ export default function Home() {
               experiencia y crecimiento nos han permitido alcanzar una cuota
               considerable del mercado con más de 250 comunidades en Canarias.
             </p>
-            <a className="gf-more" href={`${SOURCE}/por-que-gesfinc-canarias/`}>
+            <a className="gf-more" href="/por-que-gesfinc-canarias">
               <span>
                 <Arrow />
               </span>
@@ -134,7 +134,7 @@ export default function Home() {
             </p>
             <a
               className="gf-btn gf-btn--light-border"
-              href={`${SOURCE}/por-que-gesfinc-canarias/`}
+              href="/por-que-gesfinc-canarias"
             >
               ¿Por qué Gesfinc? <Arrow />
             </a>

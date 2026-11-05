@@ -4,7 +4,7 @@ import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/pages.css";
 import { Header } from "@/components/sites/gesfinc/header";
 import { Icon } from "@/components/sites/gesfinc/icons";
-import { IMG, SOURCE } from "@/components/sites/gesfinc/data";
+import { IMG } from "@/components/sites/gesfinc/data";
 import { SiteFooter } from "@/components/sites/gesfinc/shared";
 
 export const metadata: Metadata = {
@@ -80,7 +80,7 @@ export default function EmpresaPage() {
             </p>
             <a
               className="gf-em-more gf-em-more--arial"
-              href={`${SOURCE}/servicios/administrador-de-fincas/`}
+              href="/servicios/administrador-de-fincas"
             >
               <span>Más información</span>
               <span
@@ -117,7 +117,7 @@ export default function EmpresaPage() {
             PROPIETARIOS
           </p>
           <CircleLink
-            href={`${SOURCE}/servicios/asesoria-juridica-integral/`}
+            href="/servicios/asesoria-juridica-integral"
             label="Más información"
             color="rgb(236, 42, 42)"
             iconFirst
@@ -160,7 +160,7 @@ export default function EmpresaPage() {
           </div>
           <a
             className="gf-em-contact-btn gf-arial"
-            href={`${SOURCE}/contactar/`}
+            href="/contactar"
           >
             Contactar <Icon name="long-arrow-alt-right" />
           </a>

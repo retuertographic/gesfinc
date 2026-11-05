@@ -3,7 +3,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./icons";
-import { heroImages, services, SOURCE } from "./data";
+import { heroImages, services } from "./data";
 
 /** Hero horizontal gallery: 790px cells with 40px gaps, advancing every 8s (source: Flickity, autoplay 8000). */
 export function HeroGallery() {
@@ -302,8 +302,8 @@ export function CookieBanner() {
         </button>
       </div>
       <div className="gf-cookie-links">
-        <a href={`${SOURCE}/politica-de-cookies-ue/`}>Política de cookies</a>
-        <a href={`${SOURCE}/politica-privacidad/`}>Política de privacidad</a>
+        <a href="/politica-de-cookies-ue">Política de cookies</a>
+        <a href="/politica-privacidad">Política de privacidad</a>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Icon } from "./icons";
-import { apps, footerClients, footerNav, IMG, SOURCE } from "./data";
+import { apps, footerClients, footerNav, IMG } from "./data";
 import { CookieBanner, ToTop } from "./widgets";
 
 export const SLANT_LEFT = "M0,0 H1000 V6 L0,100 Z"; // white wedge, deep on the left
@@ -57,7 +57,7 @@ export function SiteFooter() {
             </p>
             <a
               className="gf-btn gf-btn--square"
-              href={`${SOURCE}/sala-de-juntas/`}
+              href="/sala-de-juntas"
             >
               Sala de Juntas <Arrow />
             </a>
@@ -132,12 +132,12 @@ export function SiteFooter() {
           <div className="gf-container">
             <p>
               Copyright 2020. Diseño X-Net Software.{" "}
-              <a href={`${SOURCE}/aviso-legal/`}>Aviso Legal</a> |{" "}
-              <a href={`${SOURCE}/politica-privacidad/`}>
+              <a href="/aviso-legal">Aviso Legal</a> |{" "}
+              <a href="/politica-privacidad">
                 Políticas de Privacidad
               </a>{" "}
               |{" "}
-              <a href={`${SOURCE}/politica-de-cookies-ue/`}>
+              <a href="/politica-de-cookies-ue">
                 Políticas de Cookies
               </a>
             </p>
