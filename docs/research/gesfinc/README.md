@@ -1,6 +1,6 @@
 # gesfinc.com — page brief
 
-Source: https://gesfinc.com/ (WordPress 6.9 + Elementor 3.33, theme "Avante"). Cloned scope: home, Servicios and Empresa.
+Source: https://gesfinc.com/ (WordPress 6.9 + Elementor 3.33, theme "Avante"). Cloned scope: every page in the site's sitemap (31 routes), except the private `/zoom-meetings/*` pages and the empty `/author/*` archives.
 
 ## Route map
 
@@ -12,7 +12,16 @@ Source: https://gesfinc.com/ (WordPress 6.9 + Elementor 3.33, theme "Avante"). C
 
 Shared across all three: `header.tsx` (overlay variant for home/Servicios, white variant for Empresa), `shared.tsx` (Sala de Juntas band, footer, back-to-top, cookie dialog).
 
-Every other internal link (Noticias, individual service pages, blog posts, legal pages, search) still points at `https://gesfinc.com/...` because those pages were not cloned.
+The remaining routes are documented per group:
+
+| Group | Routes | Notes |
+| --- | --- | --- |
+| Contact & news | `/contactar`, `/pedir-presupuesto`, `/donde-estamos`, `/sala-de-juntas`, `/noticias` | `contacto.md` |
+| Company | `/por-que-gesfinc-canarias`, `/recursos-humanos-y-materiales`, `/filosofia-empresarial`, `/inmobiliaria` | `empresa-extra.md` |
+| Service details | `/servicios/{limpieza,mantenimiento,jardineria,seguros,certificados-electronicos,certificaciones-energeticas,administrador-de-fincas,servicio-integral,asesoria-juridica-integral}` | `servicio.md` |
+| Legal, posts & forms | `/aviso-legal`, `/politica-privacidad`, `/politica-de-cookies-ue`, `/formulario-de-contacto-app`, `/category/noticias`, the 5 posts | `blog.md` |
+
+Out of scope: `/zoom-meetings/*` (~250 private community meeting pages with join tokens; buttons that pointed there go to `/sala-de-juntas`), `/author/*` (empty archives), and the real site's search, client area (`cloud.gesfinc.com`) and WordPress form handling (forms open a pre-filled email to info@gesfinc.es instead).
 
 ## Servicios (/servicios)
 

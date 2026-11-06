@@ -44,6 +44,9 @@
 @media (max-width: 1180px) {
   .gf-bl--srcfooter .gf-meeting::before { top: 90px; width: 350px; height: 37px; }
 }
+@media (max-width: 767px) {
+  .gf-bl--srcfooter .gf-meeting { padding-top: 140px; }
+}
 
 /* ---------- Complianz cookie statement (#cmplz-document) ---------- */
 .gf-bl-doc { max-width: 800px; font-size: 14px; line-height: 25.2px; }
@@ -137,7 +140,7 @@
 .gf-bl-btn:hover { opacity: 0.9; }
 
 /* Fixed previous/next article tabs */
-.gf-bl-pn { position: fixed; top: 520px; z-index: 1; }
+.gf-bl-pn { position: fixed; top: 520px; z-index: 3; }
 .gf-bl-pn--prev { left: 0; }
 .gf-bl-pn--next { right: 0; }
 .gf-bl-pn > a { display: block; color: #000; }

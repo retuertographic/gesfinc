@@ -206,6 +206,18 @@ export function CookieBanner() {
     // Read after hydration so the server render never shows the banner to people who already chose.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (!stored) setShow(true);
+    // Close the dialog when a choice is saved elsewhere: another tab ("storage") or the
+    // cookie-policy page's settings in this tab ("gesfinc-consent-change").
+    const onChange = (e: Event) => {
+      if (e instanceof StorageEvent && e.key !== COOKIE_KEY) return;
+      setShow(false);
+    };
+    window.addEventListener("storage", onChange);
+    window.addEventListener("gesfinc-consent-change", onChange);
+    return () => {
+      window.removeEventListener("storage", onChange);
+      window.removeEventListener("gesfinc-consent-change", onChange);
+    };
   }, []);
 
   const save = (value: { stats: boolean; marketing: boolean }) => {

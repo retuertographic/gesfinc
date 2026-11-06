@@ -57,6 +57,7 @@ export function ConsentManager() {
     setConsent(next);
     try {
       window.localStorage.setItem(COOKIE_KEY, JSON.stringify(next));
+      window.dispatchEvent(new Event("gesfinc-consent-change"));
       setNote("Preferencias guardadas.");
     } catch {
       setNote("No se han podido guardar las preferencias en este navegador.");

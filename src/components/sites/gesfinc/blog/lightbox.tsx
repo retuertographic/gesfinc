@@ -2,6 +2,7 @@
 
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { Icon } from "../icons";
 
 /** Inline post image that opens full size in a lightbox (the source uses ModuloBox for image links). */
@@ -42,19 +43,21 @@ export function ZoomImage({
           height={height}
         />
       </a>
-      {open && (
-        <div
-          className="gf-bl-lightbox"
-          role="dialog"
-          aria-label={alt}
-          onClick={() => setOpen(false)}
-        >
-          <img src={src} alt={alt} width={width} height={height} />
-          <button type="button" aria-label="Cerrar" autoFocus>
-            <Icon name="times" />
-          </button>
-        </div>
-      )}
+      {open &&
+        createPortal(
+          <div
+            className="gf-bl-lightbox"
+            role="dialog"
+            aria-label={alt}
+            onClick={() => setOpen(false)}
+          >
+            <img src={src} alt={alt} width={width} height={height} />
+            <button type="button" aria-label="Cerrar" autoFocus>
+              <Icon name="times" />
+            </button>
+          </div>,
+          document.querySelector(".gf") ?? document.body,
+        )}
     </>
   );
 }
