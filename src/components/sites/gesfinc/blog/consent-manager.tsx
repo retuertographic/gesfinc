@@ -35,7 +35,10 @@ function read(): Consent | null {
  * immediately, like the source, so it reopens/changes the choice made in the cookie dialog.
  */
 export function ConsentManager() {
-  const [consent, setConsent] = useState<Consent>({ stats: false, marketing: false });
+  const [consent, setConsent] = useState<Consent>({
+    stats: false,
+    marketing: false,
+  });
   const [note, setNote] = useState("");
 
   useEffect(() => {
@@ -117,8 +120,8 @@ export function ConsentManager() {
         </summary>
         <div className="gf-bl-consent-desc">
           El almacenamiento o acceso técnico es necesario para crear perfiles de
-          usuario para enviar publicidad, o para rastrear al usuario en una web o
-          en varias web con fines de marketing similares.
+          usuario para enviar publicidad, o para rastrear al usuario en una web
+          o en varias web con fines de marketing similares.
         </div>
       </details>
       <div className="gf-bl-consent-note" role="status" aria-live="polite">

@@ -1,3 +1,4 @@
+import { withBase } from "@/lib/base-path";
 import type { Metadata } from "next";
 import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/contacto/contacto.css";
@@ -63,9 +64,9 @@ export default function DondeEstamosPage() {
       <RedButtons
         className="gf-ct-btns--office"
         items={[
-          { label: "Servicios", href: "/servicios" },
-          { label: "Contactar", href: "/contactar" },
-          { label: "Pedir presupuesto", href: "/pedir-presupuesto" },
+          { label: "Servicios", href: withBase("/servicios") },
+          { label: "Contactar", href: withBase("/contactar") },
+          { label: "Pedir presupuesto", href: withBase("/pedir-presupuesto") },
         ]}
       />
 

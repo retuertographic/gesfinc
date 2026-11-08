@@ -1,3 +1,4 @@
+import { withBase } from "@/lib/base-path";
 import type { ReactNode } from "react";
 import { Header } from "../header";
 import { Shape, V_SHAPE } from "../shared";
@@ -29,7 +30,7 @@ export function PageHero({
 export function ContactLine({ prefix }: { prefix: string }) {
   return (
     <>
-      {prefix} <a href="/contactar">contactar</a> con nosotros vía{" "}
+      {prefix} <a href={withBase("/contactar")}>contactar</a> con nosotros vía{" "}
       <a href="tel:+34922975075">telefónica</a> o bien por{" "}
       <a href="mailto:info@gesfinc.es">correo electrónico</a>.
     </>

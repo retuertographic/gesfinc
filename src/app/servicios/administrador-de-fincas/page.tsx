@@ -75,9 +75,9 @@ export default function AdministradorDeFincasPage() {
           Comunicaciones individuales a los comuneros, asistencia a las Juntas
           (Ordinarias y Extraordinarias) con presencia de abogado, redacción de
           las actas de las sesiones, redacción de certificaciones, elaboración
-          de los Estatutos, expedición de certificados (para organismos
-          públicos y privados), confección del Reglamento de Régimen Interior y
-          la llevanza y salvaguardia de los Libros de Actas de la Comunidad.
+          de los Estatutos, expedición de certificados (para organismos públicos
+          y privados), confección del Reglamento de Régimen Interior y la
+          llevanza y salvaguardia de los Libros de Actas de la Comunidad.
         </p>
       </ServiceRow>
       <ServiceRow

@@ -1,4 +1,5 @@
 // Content mirrored from https://gesfinc.com/servicios/<slug>/ (Elementor pages 7693–7771).
+import { withBase } from "@/lib/base-path";
 import { IMG } from "../data";
 
 export type Photo = { src: string; width: number; height: number };
@@ -31,34 +32,61 @@ export const PHOTOS = {
 };
 
 /* "Otros servicios de Gesfinc Canarias" cards. Titles (typos included) and order are per page on the source. */
-const card = (title: string, href: string, image: string | null): OtherCard => ({
+const card = (
+  title: string,
+  href: string,
+  image: string | null,
+): OtherCard => ({
   title,
   href,
   image,
 });
 const C = {
   integral: (t = "Servicio Integal") =>
-    card(t, "/servicios/servicio-integral", "SLA_7470-700x466.jpg"),
+    card(t, withBase("/servicios/servicio-integral"), "SLA_7470-700x466.jpg"),
   integralAlt: (t: string) =>
-    card(t, "/servicios/servicio-integral", "SLA_7464-700x460-1.jpg"),
+    card(t, withBase("/servicios/servicio-integral"), "SLA_7464-700x460-1.jpg"),
   admin: (t = "Administración de fincas") =>
-    card(t, "/servicios/administrador-de-fincas", "SLA_7449-700x460-1.jpg"),
+    card(
+      t,
+      withBase("/servicios/administrador-de-fincas"),
+      "SLA_7449-700x460-1.jpg",
+    ),
   juridica: (t = "Asesoría Juridica") =>
-    card(t, "/servicios/asesoria-juridica-integral", "SLA_7474-700x460-1.jpg"),
+    card(
+      t,
+      withBase("/servicios/asesoria-juridica-integral"),
+      "SLA_7474-700x460-1.jpg",
+    ),
   limpieza: () =>
-    card("Limpieza", "/servicios/limpieza", "GESFINC-170509-121-300x200-1.jpg"),
-  mantenimiento: (img = "GESFINC-170509-83-300x200-1.jpg", t = "Mantenimiento") =>
-    card(t, "/servicios/mantenimiento", img),
+    card(
+      "Limpieza",
+      withBase("/servicios/limpieza"),
+      "GESFINC-170509-121-300x200-1.jpg",
+    ),
+  mantenimiento: (
+    img = "GESFINC-170509-83-300x200-1.jpg",
+    t = "Mantenimiento",
+  ) => card(t, withBase("/servicios/mantenimiento"), img),
   jardineria: (img = "DSC_1833-300x200-1.jpg", t = "Jardinería") =>
-    card(t, "/servicios/jardineria", img),
-  seguros: () => card("Seguros", "/servicios/seguros", "Seguro-WEB-700x460-1.jpg"),
+    card(t, withBase("/servicios/jardineria"), img),
+  seguros: () =>
+    card("Seguros", withBase("/servicios/seguros"), "Seguro-WEB-700x460-1.jpg"),
   inmobiliaria: () =>
-    card("Inmobiliaria", "/inmobiliaria", "Inmobiliaria-WEB-700x460-1.jpg"),
+    card(
+      "Inmobiliaria",
+      withBase("/inmobiliaria"),
+      "Inmobiliaria-WEB-700x460-1.jpg",
+    ),
   // No featured image on the source: WordPress shows its generic file icon (default.svg).
   certificados: () =>
-    card("Certificados electrónicos", "/servicios/certificados-electronicos", null),
+    card(
+      "Certificados electrónicos",
+      withBase("/servicios/certificados-electronicos"),
+      null,
+    ),
   certificaciones: (t = "Certificaciones energéticas") =>
-    card(t, "/servicios/certificaciones-energeticas", null),
+    card(t, withBase("/servicios/certificaciones-energeticas"), null),
 };
 
 export const OTHERS: Record<string, OtherCard[]> = {

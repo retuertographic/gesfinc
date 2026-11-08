@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import { Icon } from "./icons";
 import { apps, footerClients, footerNav, IMG } from "./data";
 import { CookieBanner, ToTop } from "./widgets";
@@ -57,7 +58,7 @@ export function SiteFooter() {
             </p>
             <a
               className="gf-btn gf-btn--square"
-              href="/sala-de-juntas"
+              href={withBase("/sala-de-juntas")}
             >
               Sala de Juntas <Arrow />
             </a>
@@ -132,12 +133,12 @@ export function SiteFooter() {
           <div className="gf-container">
             <p>
               Copyright 2020. Diseño X-Net Software.{" "}
-              <a href="/aviso-legal">Aviso Legal</a> |{" "}
-              <a href="/politica-privacidad">
+              <a href={withBase("/aviso-legal")}>Aviso Legal</a> |{" "}
+              <a href={withBase("/politica-privacidad")}>
                 Políticas de Privacidad
               </a>{" "}
               |{" "}
-              <a href="/politica-de-cookies-ue">
+              <a href={withBase("/politica-de-cookies-ue")}>
                 Políticas de Cookies
               </a>
             </p>

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import "@/components/sites/gesfinc/gesfinc.css";
 import { Header } from "@/components/sites/gesfinc/header";
 import { Icon } from "@/components/sites/gesfinc/icons";
@@ -33,7 +34,7 @@ export default function Home() {
               experiencia y crecimiento nos han permitido alcanzar una cuota
               considerable del mercado con más de 250 comunidades en Canarias.
             </p>
-            <a className="gf-more" href="/por-que-gesfinc-canarias">
+            <a className="gf-more" href={withBase("/por-que-gesfinc-canarias")}>
               <span>
                 <Arrow />
               </span>
@@ -134,7 +135,7 @@ export default function Home() {
             </p>
             <a
               className="gf-btn gf-btn--light-border"
-              href="/por-que-gesfinc-canarias"
+              href={withBase("/por-que-gesfinc-canarias")}
             >
               ¿Por qué Gesfinc? <Arrow />
             </a>
@@ -160,7 +161,7 @@ export default function Home() {
                 serie de servicios que harán posible la buena gestión de su
                 comunidad de propietarios
               </p>
-              <a className="gf-btn" href="/servicios">
+              <a className="gf-btn" href={withBase("/servicios")}>
                 Más servicios <Arrow />
               </a>
             </div>

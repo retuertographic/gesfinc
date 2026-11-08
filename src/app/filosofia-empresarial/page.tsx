@@ -6,7 +6,10 @@ import "@/components/sites/gesfinc/empresa-extra/empresa-extra.css";
 import { IMG } from "@/components/sites/gesfinc/data";
 import { SiteFooter } from "@/components/sites/gesfinc/shared";
 import { exFonts } from "@/components/sites/gesfinc/empresa-extra/fonts";
-import { ExFooterGap, ExHero } from "@/components/sites/gesfinc/empresa-extra/hero";
+import {
+  ExFooterGap,
+  ExHero,
+} from "@/components/sites/gesfinc/empresa-extra/hero";
 import { ExGallery } from "@/components/sites/gesfinc/empresa-extra/gallery";
 import { galleries } from "@/components/sites/gesfinc/empresa-extra/galleries";
 import { MeetingSlider } from "@/components/sites/gesfinc/empresa-extra/meeting-slider";

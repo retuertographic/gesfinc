@@ -10,9 +10,23 @@ const fields: {
   required?: boolean;
 }[] = [
   { name: "nombre", label: "Nombre de la persona de contacto" },
-  { name: "apellidos", label: "Apellidos de la persona de contacto ", required: true },
-  { name: "email", label: "Email de la persona de contacto ", type: "email", required: true },
-  { name: "telefono", label: "Teléfono de la persona de contacto", type: "number", required: true },
+  {
+    name: "apellidos",
+    label: "Apellidos de la persona de contacto ",
+    required: true,
+  },
+  {
+    name: "email",
+    label: "Email de la persona de contacto ",
+    type: "email",
+    required: true,
+  },
+  {
+    name: "telefono",
+    label: "Teléfono de la persona de contacto",
+    type: "number",
+    required: true,
+  },
   { name: "comunidad", label: "Nombre de la Comunidad de propietarios" },
   { name: "direccion", label: "Dirección de la Comunidad" },
   // The source repeats this placeholder on two fields; kept as is.

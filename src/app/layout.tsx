@@ -7,6 +7,7 @@ import {
   Roboto_Slab,
 } from "next/font/google";
 import "./globals.css";
+import { withBase } from "@/lib/base-path";
 
 const karla = Karla({
   variable: "--font-karla",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   title: "Gesfinc Canarias – GESFINC: expertos en administracion de fincas",
   description:
     "Gesfinc Canarias, expertos en administración de fincas de comunidades de vecinos en La Orotava, Tenerife.",
-  icons: { icon: "/sites/gesfinc/images/Logo-Gesfinc.png" },
+  icons: { icon: withBase("/sites/gesfinc/images/Logo-Gesfinc.png") },
 };
 
 export default function RootLayout({
@@ -51,6 +52,19 @@ export default function RootLayout({
       lang="es"
       className={`${roboto.variable} ${robotoSlab.variable} ${cabin.variable} ${covered.variable} ${karla.variable} antialiased`}
     >
+      <head>
+        {/* GlacialIndifference @font-face lives here (not in CSS) so the font URLs get the deployment base path. */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: ["Regular", "Bold"]
+              .map(
+                (w) =>
+                  `@font-face{font-family:"GlacialIndifference-${w}";src:url("${withBase(`/sites/gesfinc/fonts/GlacialIndifference-${w}.woff`)}") format("woff");font-weight:${w === "Bold" ? 700 : 400};font-style:normal;font-display:swap}`,
+              )
+              .join(""),
+          }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { withBase } from "@/lib/base-path";
 import { useState } from "react";
 import { IMG } from "../data";
 import { TiArrow } from "./icons";
@@ -16,7 +17,10 @@ const SLIDES: Slide[] = [
     image: "young-businesswoman-smiling-at-office-LGQRJY2.jpg",
     title: "Sala de Juntas Videoconferencia",
     text: "Abrimos nuestro nuevo servicio de Juntas a través de videoconferencia, para ello los clientes deberán tener instalado la herramienta Zoom.",
-    link: { label: "Entrar en la Sala de Juntas", href: "/sala-de-juntas" },
+    link: {
+      label: "Entrar en la Sala de Juntas",
+      href: withBase("/sala-de-juntas"),
+    },
   },
 ];
 

@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import type { Metadata } from "next";
 import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/pages.css";
@@ -80,7 +81,7 @@ export default function EmpresaPage() {
             </p>
             <a
               className="gf-em-more gf-em-more--arial"
-              href="/servicios/administrador-de-fincas"
+              href={withBase("/servicios/administrador-de-fincas")}
             >
               <span>Más información</span>
               <span
@@ -117,7 +118,7 @@ export default function EmpresaPage() {
             PROPIETARIOS
           </p>
           <CircleLink
-            href="/servicios/asesoria-juridica-integral"
+            href={withBase("/servicios/asesoria-juridica-integral")}
             label="Más información"
             color="rgb(236, 42, 42)"
             iconFirst
@@ -144,7 +145,8 @@ export default function EmpresaPage() {
             <div>
               <div className="gf-em-label">Dirección</div>
               <p>
-                Calle Juan Ortiz de Zárate 6 Edificio Mencey - Local A Peatonal 38300 La Orotava.
+                Calle Juan Ortiz de Zárate 6 Edificio Mencey - Local A Peatonal
+                38300 La Orotava.
               </p>
             </div>
             <div>
@@ -160,7 +162,7 @@ export default function EmpresaPage() {
           </div>
           <a
             className="gf-em-contact-btn gf-arial"
-            href="/contactar"
+            href={withBase("/contactar")}
           >
             Contactar <Icon name="long-arrow-alt-right" />
           </a>

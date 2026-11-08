@@ -82,10 +82,7 @@ export function ExGallery({ images }: { images: GalleryImage[] }) {
         drag.current = null;
       }}
     >
-      <div
-        className="gf-ex-gallery-track"
-        ref={track}
-      >
+      <div className="gf-ex-gallery-track" ref={track}>
         {images.map((img) => (
           <img
             key={img.src}

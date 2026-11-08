@@ -4,7 +4,10 @@ import "@/components/sites/gesfinc/pages.css";
 import "@/components/sites/gesfinc/empresa-extra/empresa-extra.css";
 import { SiteFooter } from "@/components/sites/gesfinc/shared";
 import { exFonts } from "@/components/sites/gesfinc/empresa-extra/fonts";
-import { ExFooterGap, ExHero } from "@/components/sites/gesfinc/empresa-extra/hero";
+import {
+  ExFooterGap,
+  ExHero,
+} from "@/components/sites/gesfinc/empresa-extra/hero";
 import { ExGallery } from "@/components/sites/gesfinc/empresa-extra/gallery";
 import { galleries } from "@/components/sites/gesfinc/empresa-extra/galleries";
 import { MeetingSlider } from "@/components/sites/gesfinc/empresa-extra/meeting-slider";
@@ -45,8 +48,7 @@ export default function PorQueGesfincPage() {
                 </li>
                 <li>
                   El <strong>rigor profesional</strong>: la plena competencia y
-                  el amplio conocimiento en materia de administración de
-                  fincas.
+                  el amplio conocimiento en materia de administración de fincas.
                 </li>
                 <li>
                   La <strong>calidad</strong> de los servicios suministrados que

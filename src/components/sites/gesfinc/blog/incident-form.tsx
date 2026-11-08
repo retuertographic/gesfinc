@@ -53,7 +53,12 @@ export function IncidentForm() {
 
   return (
     <form className="gf-bl-form" onSubmit={onSubmit} aria-label="New Form">
-      <input name="nombre" type="text" placeholder="Nombre" aria-label="Nombre" />
+      <input
+        name="nombre"
+        type="text"
+        placeholder="Nombre"
+        aria-label="Nombre"
+      />
       <input
         name="email"
         type="email"
@@ -84,7 +89,12 @@ export function IncidentForm() {
         aria-label="Comunidad"
         required
       />
-      <textarea name="mensaje" rows={4} placeholder="Mensaje" aria-label="Mensaje" />
+      <textarea
+        name="mensaje"
+        rows={4}
+        placeholder="Mensaje"
+        aria-label="Mensaje"
+      />
       <input name="adjuntos" type="file" multiple aria-label="Archivos" />
       <button type="submit">Enviar</button>
       {status && (

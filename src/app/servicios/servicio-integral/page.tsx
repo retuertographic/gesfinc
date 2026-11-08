@@ -1,3 +1,4 @@
+import { withBase } from "@/lib/base-path";
 import type { Metadata } from "next";
 import {
   IntroText,
@@ -26,13 +27,13 @@ export default function ServicioIntegralPage() {
         list={[
           {
             label: "Administrador de Fincas",
-            href: "/servicios/administrador-de-fincas",
+            href: withBase("/servicios/administrador-de-fincas"),
           },
           {
             label: "Asesoría Jurídica Integral",
-            href: "/servicios/asesoria-juridica-integral",
+            href: withBase("/servicios/asesoria-juridica-integral"),
           },
-          { label: "Inmobiliaria", href: "/inmobiliaria" },
+          { label: "Inmobiliaria", href: withBase("/inmobiliaria") },
           { label: "Otros servicios" },
         ]}
         photo={PHOTOS.integral}
@@ -43,11 +44,23 @@ export default function ServicioIntegralPage() {
         <p>
           Nuestra estructura empresarial nos permite asistir a su comunidad en
           todo lo concerniente a la{" "}
-          <a href="/servicios/administrador-de-fincas">administración</a>, la{" "}
-          <a href="/servicios/limpieza">limpieza de zonas comunes</a> , el{" "}
-          <a href="/servicios/mantenimiento">mantenimiento del inmueble</a>, el{" "}
-          <a href="/servicios/jardineria">mantenimiento de jardines</a> y la{" "}
-          <a href="/servicios/asesoria-juridica-integral">
+          <a href={withBase("/servicios/administrador-de-fincas")}>
+            administración
+          </a>
+          , la{" "}
+          <a href={withBase("/servicios/limpieza")}>
+            limpieza de zonas comunes
+          </a>{" "}
+          , el{" "}
+          <a href={withBase("/servicios/mantenimiento")}>
+            mantenimiento del inmueble
+          </a>
+          , el{" "}
+          <a href={withBase("/servicios/jardineria")}>
+            mantenimiento de jardines
+          </a>{" "}
+          y la{" "}
+          <a href={withBase("/servicios/asesoria-juridica-integral")}>
             asistencia jurídica
           </a>
           .
@@ -60,7 +73,7 @@ export default function ServicioIntegralPage() {
           </>
         }
         // Source button points at /servicios/administracion-de-fincas/ (404).
-        button="/servicios/administrador-de-fincas"
+        button={withBase("/servicios/administrador-de-fincas")}
         image={PHOTOS.admin}
         imageTop={-23}
       >
@@ -74,7 +87,7 @@ export default function ServicioIntegralPage() {
       </ServiceRow>
       <ServiceRow
         heading={"Asesoría Juridica​"}
-        button="/servicios/asesoria-juridica-integral"
+        button={withBase("/servicios/asesoria-juridica-integral")}
         image={PHOTOS.juridica}
         imageTop={-13.571}
         imageSide="left"

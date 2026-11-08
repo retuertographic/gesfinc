@@ -1,11 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import type { Metadata } from "next";
 import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/contacto/contacto.css";
 import { IMG } from "@/components/sites/gesfinc/data";
 import { SiteFooter } from "@/components/sites/gesfinc/shared";
 import { ctFonts } from "@/components/sites/gesfinc/contacto/fonts";
-import { PageHero, RedButtons } from "@/components/sites/gesfinc/contacto/parts";
+import {
+  PageHero,
+  RedButtons,
+} from "@/components/sites/gesfinc/contacto/parts";
 import { ContactForm } from "@/components/sites/gesfinc/contacto/forms";
 import { ScrollFx } from "@/components/sites/gesfinc/contacto/scroll-fx";
 
@@ -38,26 +42,78 @@ export default function ContactarPage() {
 
       <section className="gf-container gf-ct-about">
         {/* Decorative bubbles and triangles (Avante infinite / scrollme effects). */}
-        <div className="gf-ct-deco gf-ct-deco--1 gf-ct-if-scale" aria-hidden="true">
+        <div
+          className="gf-ct-deco gf-ct-deco--1 gf-ct-if-scale"
+          aria-hidden="true"
+        >
           <img src={`${IMG}/purple_bubble.png`} alt="" width={90} height={90} />
         </div>
-        <div className="gf-ct-deco gf-ct-deco--2 gf-ct-if-bounce" aria-hidden="true">
-          <img src={`${IMG}/orange_bubble-1.png`} alt="" width={70} height={70} />
+        <div
+          className="gf-ct-deco gf-ct-deco--2 gf-ct-if-bounce"
+          aria-hidden="true"
+        >
+          <img
+            src={`${IMG}/orange_bubble-1.png`}
+            alt=""
+            width={70}
+            height={70}
+          />
         </div>
         <ScrollFx ty={200} rx={-360} className="gf-ct-deco gf-ct-deco--3">
-          <img src={`${IMG}/orange_triangle2.png`} alt="" width={150} height={120} />
+          <img
+            src={`${IMG}/orange_triangle2.png`}
+            alt=""
+            width={150}
+            height={120}
+          />
         </ScrollFx>
-        <ScrollFx tx={300} ty={60} rx={360} ry={360} className="gf-ct-deco gf-ct-deco--4">
-          <img src={`${IMG}/orange_triangle-1.png`} alt="" width={190} height={150} />
+        <ScrollFx
+          tx={300}
+          ty={60}
+          rx={360}
+          ry={360}
+          className="gf-ct-deco gf-ct-deco--4"
+        >
+          <img
+            src={`${IMG}/orange_triangle-1.png`}
+            alt=""
+            width={190}
+            height={150}
+          />
         </ScrollFx>
-        <ScrollFx tx={-200} ty={60} ry={-360} className="gf-ct-deco gf-ct-deco--5">
-          <img src={`${IMG}/orange_triangle-1.png`} alt="" width={190} height={150} />
+        <ScrollFx
+          tx={-200}
+          ty={60}
+          ry={-360}
+          className="gf-ct-deco gf-ct-deco--5"
+        >
+          <img
+            src={`${IMG}/orange_triangle-1.png`}
+            alt=""
+            width={190}
+            height={150}
+          />
         </ScrollFx>
-        <ScrollFx tx={-100} ty={-50} minWidth={1025} className="gf-ct-deco gf-ct-deco--6">
+        <ScrollFx
+          tx={-100}
+          ty={-50}
+          minWidth={1025}
+          className="gf-ct-deco gf-ct-deco--6"
+        >
           <img src={`${IMG}/purple_bubble.png`} alt="" width={90} height={90} />
         </ScrollFx>
-        <ScrollFx tx={-200} ty={-70} ry={360} className="gf-ct-deco gf-ct-deco--7">
-          <img src={`${IMG}/orange_bubble-1.png`} alt="" width={70} height={70} />
+        <ScrollFx
+          tx={-200}
+          ty={-70}
+          ry={360}
+          className="gf-ct-deco gf-ct-deco--7"
+        >
+          <img
+            src={`${IMG}/orange_bubble-1.png`}
+            alt=""
+            width={70}
+            height={70}
+          />
         </ScrollFx>
 
         <h2>Gesfinc Canarias: Expertos en Administración de fincas</h2>
@@ -73,9 +129,9 @@ export default function ContactarPage() {
       {/* "Oficinas" and "Pedir presupuesto" link to "#" on the source; pointed at their real pages. */}
       <RedButtons
         items={[
-          { label: "Servicios", href: "/servicios" },
-          { label: "Oficinas", href: "/donde-estamos" },
-          { label: "Pedir presupuesto", href: "/pedir-presupuesto" },
+          { label: "Servicios", href: withBase("/servicios") },
+          { label: "Oficinas", href: withBase("/donde-estamos") },
+          { label: "Pedir presupuesto", href: withBase("/pedir-presupuesto") },
         ]}
       />
 

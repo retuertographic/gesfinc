@@ -174,7 +174,9 @@ export function ServiceRow({
       {imageSide === "left" && media}
       <div className="gf-sd-row-text">
         {heading && <h2>{heading}</h2>}
-        <div className={`gf-sd-row-copy${small ? " gf-sd-row-copy--small" : ""}`}>
+        <div
+          className={`gf-sd-row-copy${small ? " gf-sd-row-copy--small" : ""}`}
+        >
           {children}
         </div>
         {button && (
@@ -254,7 +256,11 @@ export function QuoteSection({
   inline?: boolean;
 }) {
   return (
-    <div className={inline ? "gf-sd-quote gf-sd-quote--inline" : "gf-container gf-sd-quote"}>
+    <div
+      className={
+        inline ? "gf-sd-quote gf-sd-quote--inline" : "gf-container gf-sd-quote"
+      }
+    >
       <h2 className="gf-arial">{title}</h2>
       <QuoteRequestForm subject={title} />
     </div>

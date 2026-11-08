@@ -1,4 +1,7 @@
-import { PostPage, postMetadata } from "@/components/sites/gesfinc/blog/post-page";
+import {
+  PostPage,
+  postMetadata,
+} from "@/components/sites/gesfinc/blog/post-page";
 
 const SLUG = "proximamente-juntas-por-videoconferencia";
 

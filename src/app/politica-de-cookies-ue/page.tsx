@@ -8,7 +8,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Política de cookies (UE) – Gesfinc Canarias",
-  description: "Política de cookies de gesfinc.com: qué cookies usamos y cómo gestionar tu consentimiento.",
+  description:
+    "Política de cookies de gesfinc.com: qué cookies usamos y cómo gestionar tu consentimiento.",
 };
 
 export default function PoliticaCookiesPage() {

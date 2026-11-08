@@ -1,6 +1,7 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./icons";
 import { heroImages, services } from "./data";
@@ -314,8 +315,8 @@ export function CookieBanner() {
         </button>
       </div>
       <div className="gf-cookie-links">
-        <a href="/politica-de-cookies-ue">Política de cookies</a>
-        <a href="/politica-privacidad">Política de privacidad</a>
+        <a href={withBase("/politica-de-cookies-ue")}>Política de cookies</a>
+        <a href={withBase("/politica-privacidad")}>Política de privacidad</a>
       </div>
     </div>
   );

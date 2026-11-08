@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import type { Metadata } from "next";
 import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/pages.css";
@@ -18,55 +19,55 @@ export const metadata: Metadata = {
 const heroList = [
   {
     label: "Administrador de Fincas",
-    href: "/servicios/administrador-de-fincas",
+    href: withBase("/servicios/administrador-de-fincas"),
   },
   {
     label: "Servicio Integral",
-    href: "/servicios/servicio-integral",
+    href: withBase("/servicios/servicio-integral"),
   },
   {
     label: "Asesoría Jurídica Integral",
-    href: "/servicios/asesoria-juridica-integral",
+    href: withBase("/servicios/asesoria-juridica-integral"),
   },
-  { label: "Inmobiliaria", href: "/inmobiliaria" },
+  { label: "Inmobiliaria", href: withBase("/inmobiliaria") },
   { label: "Otros servicios", href: "#otros-servicios" },
 ];
 
 const others: { title: string; href: string; image: string | null }[] = [
   {
     title: "Limpieza",
-    href: "/servicios/limpieza",
+    href: withBase("/servicios/limpieza"),
     image: "GESFINC-170509-121-300x200-1.jpg",
   },
   {
     title: "Mantenimiento",
-    href: "/servicios/mantenimiento",
+    href: withBase("/servicios/mantenimiento"),
     image: "GESFINC-170509-83-300x200-1.jpg",
   },
   {
     title: "Jardinería",
-    href: "/servicios/jardineria",
+    href: withBase("/servicios/jardineria"),
     image: "DSC_1833-300x200-1.jpg",
   },
   {
     title: "Seguros",
-    href: "/servicios/seguros",
+    href: withBase("/servicios/seguros"),
     image: "Seguro-WEB-700x460-1.jpg",
   },
   {
     title: "Inmobiliaria",
-    href: "/inmobiliaria",
+    href: withBase("/inmobiliaria"),
     image: "Inmobiliaria-WEB-700x460-1.jpg",
   },
   // These two have no featured image on the source; WordPress shows its generic file icon instead.
   {
     title: "Certificados electrónicos",
-    href: "/servicios/certificados-electronicos",
+    href: withBase("/servicios/certificados-electronicos"),
     image: null,
   },
   {
     title: "Certificaciones energéticas",
-    href: "/servicios/certificaciones-energeticas",
+    href: withBase("/servicios/certificaciones-energeticas"),
     image: null,
   },
 ];
@@ -149,7 +150,7 @@ export default function ServiciosPage() {
               <li>Servicios</li>
             </ul>
           </div>
-          <MoreButton href="/servicios/administrador-de-fincas" />
+          <MoreButton href={withBase("/servicios/administrador-de-fincas")} />
         </div>
         <div className="gf-sv-media">
           <ScrollDrift
@@ -201,7 +202,7 @@ export default function ServiciosPage() {
               servicios muy específicos o puntuales.
             </p>
           </div>
-          <MoreButton href="/servicios/servicio-integral" />
+          <MoreButton href={withBase("/servicios/servicio-integral")} />
         </div>
       </section>
 
@@ -219,7 +220,7 @@ export default function ServiciosPage() {
             </p>
           </div>
           <MoreButton
-            href="/servicios/asesoria-juridica-integral"
+            href={withBase("/servicios/asesoria-juridica-integral")}
           />
         </div>
         <div className="gf-sv-media">

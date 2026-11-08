@@ -1,8 +1,8 @@
+import { withBase } from "@/lib/base-path";
 import type { ReactNode } from "react";
 import { IMG } from "../data";
 import { Icon } from "../icons";
 import { ZoomImage } from "./lightbox";
-
 
 export type Post = {
   slug: string;
@@ -55,7 +55,11 @@ export const posts: Post[] = [
     title: "Modelos fiscales exigibles a las comunidades de propietarios",
     hero: `${IMG}/Anuncio-347.jpg`,
     navThumb: `${IMG}/Anuncio-347-610x610.jpg`,
-    archiveImage: { src: `${IMG}/Anuncio-347-656x604.jpg`, width: 656, height: 604 },
+    archiveImage: {
+      src: `${IMG}/Anuncio-347-656x604.jpg`,
+      width: 656,
+      height: 604,
+    },
     excerpt:
       "El Consejo General de Colegios de Administradores de fincas ha publicado una Nota de prensa en la que hace hincapié en la obligación de las comunidades de propietarios de declarar las operaciones que superen los 3000 €. Por otra parte, el Colegio […]",
     description:
@@ -71,15 +75,19 @@ export const posts: Post[] = [
           />
           El Consejo General de Colegios de Administradores de fincas ha
           publicado una&nbsp;
-          <a href="/sites/gesfinc/docs/NP-MODELO-347-1.pdf">Nota de prensa</a>
-          &nbsp;en la que hace hincapié en la obligación de las comunidades de propietarios
-          de declarar las operaciones que superen los 3000 €.
+          <a href={withBase("/sites/gesfinc/docs/NP-MODELO-347-1.pdf")}>
+            Nota de prensa
+          </a>
+          &nbsp;en la que hace hincapié en la obligación de las comunidades de
+          propietarios de declarar las operaciones que superen los 3000 €.
         </p>
         <p>
-          Por otra parte, el Colegio de Administradores de Fincas de Sta. Cruz de
-          Tenerife &nbsp;ha emitido una circular con información relativa a la
-          obligación de cumplimentar en tiempo y forma los distintos&nbsp;
-          <a href="/sites/gesfinc/docs/MODELOS-FISCALES.pdf">Modelos fiscales</a>
+          Por otra parte, el Colegio de Administradores de Fincas de Sta. Cruz
+          de Tenerife &nbsp;ha emitido una circular con información relativa a
+          la obligación de cumplimentar en tiempo y forma los distintos&nbsp;
+          <a href={withBase("/sites/gesfinc/docs/MODELOS-FISCALES.pdf")}>
+            Modelos fiscales
+          </a>
           &nbsp;que son exigibles a las comunidades de propietarios; lo que hace
           resaltar la importancia de asesorarse con profesionales.
         </p>
@@ -91,7 +99,11 @@ export const posts: Post[] = [
     title: "App Gesfinc",
     hero: `${IMG}/APP-GESFINC-43685274_xxl.jpg`,
     navThumb: `${IMG}/APP-GESFINC-43685274_xxl-610x548.jpg`,
-    archiveImage: { src: `${IMG}/APP-GESFINC-43685274_xxl-960x548.jpg`, width: 960, height: 548 },
+    archiveImage: {
+      src: `${IMG}/APP-GESFINC-43685274_xxl-960x548.jpg`,
+      width: 960,
+      height: 548,
+    },
     excerpt:
       "Consigue aquí la App de Gesfinc para tu móvil: Descargar Gesfinc para IOS Descargar Gesfinc para Android",
     description:
@@ -159,7 +171,11 @@ export const posts: Post[] = [
     title: "GesFinc por el Deporte Canario",
     hero: `${IMG}/IMG_7278-1024x768-1.jpg`,
     navThumb: `${IMG}/IMG_7278-1024x768-1-610x610.jpg`,
-    archiveImage: { src: `${IMG}/IMG_7278-1024x768-1-960x604.jpg`, width: 960, height: 604 },
+    archiveImage: {
+      src: `${IMG}/IMG_7278-1024x768-1-960x604.jpg`,
+      width: 960,
+      height: 604,
+    },
     excerpt:
       "En GesFinc apostamos por el deporte canario. Buena muestra de ello es nuestro apoyo al C.D. Salesianos «CDS» La Orotava, un equipo que está desarrollando una gran labor con más de 400 niños practicando deporte en el valle de la Orotava tanto fútbol […]",
     description:
@@ -170,8 +186,8 @@ export const posts: Post[] = [
           En GesFinc apostamos por el deporte canario. Buena muestra de ello es
           nuestro apoyo al&nbsp;C.D. Salesianos «CDS» La Orotava, un&nbsp;equipo
           que está desarrollando una gran labor con&nbsp;más de 400 niños
-          practicando deporte
-          en el valle de la Orotava tanto fútbol sala como el voleibol.
+          practicando deporte en el valle de la Orotava tanto fútbol sala como
+          el voleibol.
         </p>
         <p>
           Visita su página en facebook:&nbsp;

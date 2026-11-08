@@ -25,7 +25,10 @@ export default function MantenimientoPage() {
           { label: "Desinsectación" },
           { label: "Desratización" },
           { label: "Limpieza de pozos negros" },
-          { label: "Control e instalación de extintores (revisiones periódicas)," },
+          {
+            label:
+              "Control e instalación de extintores (revisiones periódicas),",
+          },
           { label: "Instalaciones contra incendios" },
           { label: "Sistemas de seguridad (alarma, puertas blindadas, etc.)" },
           {

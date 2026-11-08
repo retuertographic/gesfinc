@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import type { Metadata } from "next";
 import "@/components/sites/gesfinc/gesfinc.css";
 import "@/components/sites/gesfinc/pages.css";
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     "Gesfinc Canarias, pone a disposición de los propietarios que forman parte de las comunidades el servicio de mediación en la compraventa de pisos, locales, garajes y otros bienes inmuebles.",
 };
 
-const POST = "/proximamente-juntas-por-videoconferencia";
+const POST = withBase("/proximamente-juntas-por-videoconferencia");
 
 export default function InmobiliariaPage() {
   return (

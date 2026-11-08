@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import { IMG } from "../data";
 
 type NewsPost = {
@@ -14,7 +15,7 @@ type NewsPost = {
 const newsPosts: NewsPost[] = [
   {
     title: "Próximamente: Juntas por videoconferencia",
-    href: "/proximamente-juntas-por-videoconferencia",
+    href: withBase("/proximamente-juntas-por-videoconferencia"),
     image: "AdobeStock_340095251-Videoconferencia-270x154-1.jpg",
     width: 270,
     height: 154,
@@ -23,7 +24,9 @@ const newsPosts: NewsPost[] = [
   },
   {
     title: "Modelos fiscales exigibles a las comunidades de propietarios",
-    href: "/modelos-fiscales-exigibles-a-las-comunidades-de-propietarios",
+    href: withBase(
+      "/modelos-fiscales-exigibles-a-las-comunidades-de-propietarios",
+    ),
     image: "Anuncio-347.jpg",
     width: 656,
     height: 912,
@@ -32,7 +35,7 @@ const newsPosts: NewsPost[] = [
   },
   {
     title: "App Gesfinc",
-    href: "/app-gesfinc",
+    href: withBase("/app-gesfinc"),
     image: "APP-GESFINC-43685274_xxl-768x360.jpg",
     width: 768,
     height: 360,
@@ -42,7 +45,7 @@ const newsPosts: NewsPost[] = [
   {
     // The source post's title says 2017 while its slug says 2018; both kept as on the source.
     title: "Felices fiestas, y próspero año 2017",
-    href: "/felices-fiestas-y-prospero-ano-2018",
+    href: withBase("/felices-fiestas-y-prospero-ano-2018"),
     image: "Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-768x360.jpg",
     width: 768,
     height: 360,
@@ -51,7 +54,7 @@ const newsPosts: NewsPost[] = [
   },
   {
     title: "GesFinc por el Deporte Canario",
-    href: "/gesfinc-por-el-deporte-canario",
+    href: withBase("/gesfinc-por-el-deporte-canario"),
     image: "IMG_7278-1024x768-1-768x576.jpg",
     width: 768,
     height: 576,
@@ -78,7 +81,7 @@ function NewsCard({ post, order }: { post: NewsPost; order: number }) {
       </div>
       <div className="gf-ct-post-body">
         <div className="gf-ct-post-cat">
-          <a href="/category/noticias">Noticias</a>
+          <a href={withBase("/category/noticias")}>Noticias</a>
         </div>
         <h5>
           <a href={post.href} title={post.title}>

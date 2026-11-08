@@ -41,7 +41,10 @@ export default function AsesoriaJuridicaIntegralPage() {
             Asistencia Letrada a las Juntas de Propietarios (Ordinarias o
             Extraordinarias)
           </li>
-          <li>Tramitación de los requerimientos previstos en la Ley por posibles impagos</li>
+          <li>
+            Tramitación de los requerimientos previstos en la Ley por posibles
+            impagos
+          </li>
           <li>Requerimientos a copropietarios infractores</li>
           <li>
             Redacción de contratos de servicios y suministros de la comunidad

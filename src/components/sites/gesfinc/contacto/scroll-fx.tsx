@@ -41,7 +41,10 @@ export function ScrollFx({
         return;
       }
       const vh = window.innerHeight;
-      const p = Math.max(0, Math.min(1, (vh - o.getBoundingClientRect().top) / vh));
+      const p = Math.max(
+        0,
+        Math.min(1, (vh - o.getBoundingClientRect().top) / vh),
+      );
       i.style.transform = `perspective(1000px) translate(${tx * p}px, ${ty * p}px) rotateX(${rx * p}deg) rotateY(${ry * p}deg)`;
     };
     const schedule = () => {

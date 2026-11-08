@@ -1,6 +1,7 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
+import { withBase } from "@/lib/base-path";
 import { useEffect, useRef } from "react";
 import { Icon } from "../icons";
 import { IMG } from "../data";
@@ -28,13 +29,60 @@ const DECOS: Deco[] = [
   { id: "a", img: "purple_bubble.png", loop: "scale" },
   { id: "b", img: "purple_bubble.png", loop: "bounce" },
   { id: "c", img: "orange_bubble-1.png", loop: "bounce" },
-  { id: "d", img: "orange_triangle2.png", scroll: { y: 200, rotateX: -360, smoothness: 60, disableBelow: 501 } },
-  { id: "e", img: "orange_triangle2.png", scroll: { x: 70, rotateX: -360, smoothness: 60, disableBelow: 501 } },
-  { id: "f", img: "orange_triangle-1.png", scroll: { x: 300, y: 60, rotateX: 360, rotateY: 360, smoothness: 60, disableBelow: 501 } },
-  { id: "g", img: "orange_triangle-1.png", scroll: { x: -200, y: 60, rotateY: -360, smoothness: 60, disableBelow: 501 } },
-  { id: "h", img: "purple_bubble.png", scroll: { x: -100, y: -50, smoothness: 30, disableBelow: 769 } },
-  { id: "i", img: "purple_bubble.png", scroll: { x: -100, y: -50, smoothness: 30, disableBelow: 769 } },
-  { id: "j", img: "orange_bubble-1.png", scroll: { x: -200, y: -70, rotateY: 360, smoothness: 30, disableBelow: 501 } },
+  {
+    id: "d",
+    img: "orange_triangle2.png",
+    scroll: { y: 200, rotateX: -360, smoothness: 60, disableBelow: 501 },
+  },
+  {
+    id: "e",
+    img: "orange_triangle2.png",
+    scroll: { x: 70, rotateX: -360, smoothness: 60, disableBelow: 501 },
+  },
+  {
+    id: "f",
+    img: "orange_triangle-1.png",
+    scroll: {
+      x: 300,
+      y: 60,
+      rotateX: 360,
+      rotateY: 360,
+      smoothness: 60,
+      disableBelow: 501,
+    },
+  },
+  {
+    id: "g",
+    img: "orange_triangle-1.png",
+    scroll: {
+      x: -200,
+      y: 60,
+      rotateY: -360,
+      smoothness: 60,
+      disableBelow: 501,
+    },
+  },
+  {
+    id: "h",
+    img: "purple_bubble.png",
+    scroll: { x: -100, y: -50, smoothness: 30, disableBelow: 769 },
+  },
+  {
+    id: "i",
+    img: "purple_bubble.png",
+    scroll: { x: -100, y: -50, smoothness: 30, disableBelow: 769 },
+  },
+  {
+    id: "j",
+    img: "orange_bubble-1.png",
+    scroll: {
+      x: -200,
+      y: -70,
+      rotateY: 360,
+      smoothness: 30,
+      disableBelow: 501,
+    },
+  },
 ];
 
 const KEYS = ["x", "y", "rotateX", "rotateY"] as const;
@@ -117,7 +165,7 @@ export function OpinionBand() {
         <h2>Su opinión es muy importante para nosotros</h2>
         <h2 className="gf-ex-opinion-accent">envíenos sus comentarios</h2>
         {/* Source button: https://gesfinc.com/contactar/ */}
-        <a className="gf-ex-opinion-btn" href="/contactar">
+        <a className="gf-ex-opinion-btn" href={withBase("/contactar")}>
           Enviar <Icon name="long-arrow-alt-right" />
         </a>
       </div>
