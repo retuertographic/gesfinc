@@ -1,0 +1,50 @@
+# Gesfinc Canarias
+
+> Gesfinc Canarias es una empresa de administración de fincas y comunidades de propietarios con sede en La Orotava (Tenerife, Canarias). Fundada en 2001, ofrece un servicio integral a más de 300 comunidades: administración, asesoría jurídica, limpieza, mantenimiento, jardinería, seguros, inmobiliaria, certificados electrónicos y certificaciones energéticas.
+
+Datos de contacto: Calle Juan Ortiz de Zárate 6, Edificio Mencey – Local A Peatonal, 38300 La Orotava (Santa Cruz de Tenerife). Teléfono 922 975 075, fax 922 32 50 48, correo info@gesfinc.es. Las comunidades clientes disponen de un área privada (https://cloud.gesfinc.com/), una app para iOS y Android y juntas de propietarios por videoconferencia.
+
+## Empresa
+
+- [Inicio](https://retuertographic.github.io/gesfinc/): presentación de Gesfinc Canarias, servicios destacados y últimas noticias.
+- [Quiénes somos](https://retuertographic.github.io/gesfinc/empresa/): historia de la empresa, equipo y datos de contacto.
+- [¿Por qué Gesfinc Canarias?](https://retuertographic.github.io/gesfinc/por-que-gesfinc-canarias/): lo que caracteriza a la empresa (seriedad, rigor profesional y calidad).
+- [Recursos humanos y materiales](https://retuertographic.github.io/gesfinc/recursos-humanos-y-materiales/): equipo, oficinas y medios.
+- [Filosofía empresarial](https://retuertographic.github.io/gesfinc/filosofia-empresarial/): valores y forma de trabajar.
+
+## Servicios
+
+- [Servicios](https://retuertographic.github.io/gesfinc/servicios/): resumen de todos los servicios para comunidades de propietarios.
+- [Administrador de fincas](https://retuertographic.github.io/gesfinc/servicios/administrador-de-fincas/): secretaría de la comunidad, economía y gestión de servicios.
+- [Servicio integral](https://retuertographic.github.io/gesfinc/servicios/servicio-integral/): todos los servicios de la comunidad sin subcontratas.
+- [Asesoría jurídica integral](https://retuertographic.github.io/gesfinc/servicios/asesoria-juridica-integral/): asistencia legal especializada en propiedad horizontal.
+- [Limpieza](https://retuertographic.github.io/gesfinc/servicios/limpieza/): limpieza de zonas comunes y de obras.
+- [Mantenimiento](https://retuertographic.github.io/gesfinc/servicios/mantenimiento/): mantenimiento de edificios e instalaciones.
+- [Jardinería](https://retuertographic.github.io/gesfinc/servicios/jardineria/): cuidado de jardines y zonas verdes.
+- [Seguros](https://retuertographic.github.io/gesfinc/servicios/seguros/): seguros para comunidades de propietarios.
+- [Certificados electrónicos](https://retuertographic.github.io/gesfinc/servicios/certificados-electronicos/): oficina de registro para certificados digitales.
+- [Certificaciones energéticas](https://retuertographic.github.io/gesfinc/servicios/certificaciones-energeticas/): certificados de eficiencia energética.
+- [Inmobiliaria](https://retuertographic.github.io/gesfinc/inmobiliaria/): búsqueda de inmuebles.
+
+## Contacto
+
+- [Contactar](https://retuertographic.github.io/gesfinc/contactar/): formulario de contacto.
+- [Pedir presupuesto](https://retuertographic.github.io/gesfinc/pedir-presupuesto/): solicitud de presupuesto para una comunidad.
+- [¿Dónde estamos?](https://retuertographic.github.io/gesfinc/donde-estamos/): dirección de la oficina y mapa.
+- [Sala de juntas](https://retuertographic.github.io/gesfinc/sala-de-juntas/): juntas de propietarios por videoconferencia.
+- [Comunicación de incidencias](https://retuertographic.github.io/gesfinc/formulario-de-contacto-app/): formulario para comunicar incidencias de la comunidad.
+
+## Noticias
+
+- [Noticias](https://retuertographic.github.io/gesfinc/noticias/): todas las noticias del blog.
+- [Próximamente: juntas por videoconferencia](https://retuertographic.github.io/gesfinc/proximamente-juntas-por-videoconferencia/)
+- [Modelos fiscales exigibles a las comunidades de propietarios](https://retuertographic.github.io/gesfinc/modelos-fiscales-exigibles-a-las-comunidades-de-propietarios/)
+- [App Gesfinc](https://retuertographic.github.io/gesfinc/app-gesfinc/)
+
+## Optional
+
+- [Felices fiestas y próspero año](https://retuertographic.github.io/gesfinc/felices-fiestas-y-prospero-ano-2018/)
+- [Gesfinc por el deporte canario](https://retuertographic.github.io/gesfinc/gesfinc-por-el-deporte-canario/)
+- [Aviso legal](https://retuertographic.github.io/gesfinc/aviso-legal/)
+- [Política de privacidad](https://retuertographic.github.io/gesfinc/politica-privacidad/)
+- [Política de cookies](https://retuertographic.github.io/gesfinc/politica-de-cookies-ue/)
