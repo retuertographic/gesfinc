@@ -1116,6 +1116,21 @@
 .gf-copy a:hover {
   color: #fff;
 }
+.gf-copy .gf-credit {
+  margin-top: 12px;
+}
+.gf-copy .gf-credit a {
+  white-space: nowrap;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.gf-credit-bar {
+  padding: 24px 0;
+}
+.gf-credit-bar .gf-credit {
+  margin-top: 0;
+}
 
 /* ---------- Floating UI ---------- */
 .gf-totop {

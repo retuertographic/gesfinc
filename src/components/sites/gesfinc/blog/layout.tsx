@@ -3,7 +3,7 @@ import "../gesfinc.css";
 import "../pages.css";
 import "./blog.css";
 import { Header } from "../header";
-import { SiteFooter } from "../shared";
+import { DeveloperCredit, SiteFooter } from "../shared";
 import { CookieBanner, ToTop } from "../widgets";
 
 /**
@@ -28,6 +28,7 @@ export function BlogShell({
         <SiteFooter />
       ) : (
         <>
+          <DeveloperCredit standalone />
           <ToTop />
           <CookieBanner />
         </>

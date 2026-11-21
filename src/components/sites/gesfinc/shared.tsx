@@ -33,6 +33,35 @@ export function Arrow() {
   return <Icon name="long-arrow-alt-right" />;
 }
 
+/** Developer signature, the same one used on Retuerto Graphic Design's other sites. */
+export function DeveloperCredit({
+  standalone = false,
+}: {
+  standalone?: boolean;
+}) {
+  const line = (
+    <p className="gf-credit">
+      Desarrollado por{" "}
+      <a
+        href="https://retuertographicdesign.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        Retuerto Graphic Design
+      </a>
+      . Ricardo Retuerto Barrera | Spain-Germany |{" "}
+      <a href="tel:+34922971723">0034 922 971 723</a> ·{" "}
+      <a href="tel:+493031878629">0049 30 31878629</a>
+    </p>
+  );
+  if (!standalone) return line;
+  return (
+    <div className="gf-copy gf-credit-bar">
+      <div className="gf-container">{line}</div>
+    </div>
+  );
+}
+
 /** "Sala de Juntas" band, footer, back-to-top and cookie dialog — identical on every source page. */
 export function SiteFooter() {
   return (
@@ -142,6 +171,7 @@ export function SiteFooter() {
                 Políticas de Cookies
               </a>
             </p>
+            <DeveloperCredit />
           </div>
         </div>
       </footer>
