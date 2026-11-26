@@ -8,9 +8,8 @@
   --gf-bl-btn: rgb(105, 114, 125);
 }
 
-/* The shared white header is 228px tall; the source's is 237px (and 162px on mobile vs 120px). */
 .gf-bl-top {
-  height: 9px;
+  height: 0;
 }
 .gf-bl-appform .gf-bl-top {
   height: 0;
@@ -83,40 +82,6 @@
 }
 .gf-bl-legal {
   padding-bottom: 0;
-}
-
-/* Legal pages: the source loads the footer template without Elementor's shape-divider CSS, so its "tilt" divider
-   renders in flow as a black wedge 140px below the band's top edge and pushes the content 110px down. */
-.gf-bl--srcfooter .gf-meeting > .gf-shape--top {
-  display: none;
-}
-.gf-bl--srcfooter .gf-meeting::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 140px;
-  width: 500px;
-  height: 53px;
-  background: #000;
-  clip-path: polygon(0 0, 100% 0, 100% 6px, 0 100%);
-}
-@media (min-width: 1181px) {
-  .gf-bl--srcfooter .gf-meeting {
-    height: 1010px;
-    padding-top: 402px;
-  }
-}
-@media (max-width: 1180px) {
-  .gf-bl--srcfooter .gf-meeting::before {
-    top: 90px;
-    width: 350px;
-    height: 37px;
-  }
-}
-@media (max-width: 767px) {
-  .gf-bl--srcfooter .gf-meeting {
-    padding-top: 140px;
-  }
 }
 
 /* ---------- Complianz cookie statement (#cmplz-document) ---------- */
@@ -757,11 +722,6 @@
 }
 
 /* ---------- Comunicación de incidencias ---------- */
-/* Custom CSS on the source page hides the main nav row (Elementor section 5838100) and its sticky copy. */
-.gf-bl-appform .gf-header--white,
-.gf-bl-appform .gf-sticky {
-  display: none;
-}
 .gf-bl-appform .gf-bl-title {
   margin-top: -1px;
 }
@@ -806,12 +766,36 @@
 .gf-bl-form textarea:focus {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
-.gf-bl-form input[type="file"] {
-  font:
-    13.33px Arial,
-    sans-serif;
-  height: 21px;
-  color: #000;
+.gf-bl-file {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(31, 33, 36);
+}
+.gf-bl-file input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.gf-bl-file-btn {
+  flex: none;
+  padding: 8px 16px;
+  border: 1px solid rgb(105, 114, 125);
+  border-radius: 3px;
+  background: #f7f7f7;
+  transition: background 0.2s;
+}
+.gf-bl-file:hover .gf-bl-file-btn,
+.gf-bl-file:focus-within .gf-bl-file-btn {
+  background: #e9e9e9;
+}
+.gf-bl-file-names {
+  color: rgb(105, 114, 125);
+  overflow-wrap: anywhere;
 }
 .gf-bl-form button {
   height: 40px;
@@ -839,14 +823,6 @@
 }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1180px) {
-  .gf-bl-top {
-    height: 42px;
-  }
-  .gf-bl-appform .gf-bl-top {
-    height: 61px;
-  }
-}
 @media (max-width: 1240px) {
   .gf-bl-body {
     margin-left: 90px;

@@ -47,6 +47,7 @@ function Logo() {
 export function Header({
   variant = "overlay",
 }: {
+  /** "white" (legacy name): the same header on a solid brand band, for pages without a coloured hero. */
   variant?: "overlay" | "white";
 }) {
   const [sticky, setSticky] = useState(false);
@@ -109,79 +110,40 @@ export function Header({
 
   return (
     <>
-      {variant === "white" ? (
-        <>
-          <div className="gf-wtop">
-            <div className="gf-container">
-              <ul>
-                <li>
-                  <Icon name="map-marker-alt" />
-                  C/ Juan Ortiz de Zárate nº 6, local A peatonal 38300 La
-                  Orotava
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="tel:+34922975075">
-                    <Icon name="phone-alt" />
-                    +34 922 975 075
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@gesfinc.es">
-                    <Icon name="envelope" />
-                    info@gesfinc.es
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div className={variant === "white" ? "gf-hbar" : undefined}>
+        <div className="gf-container">
+          <div className="gf-topbar">
+            <ul>
+              <li>
+                <Icon name="map-marker-alt" />
+                Calle Juan Ortiz de Zárate 6 Edificio Mencey - Local A Peatonal
+                38300 La Orotava.
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="tel:+34922975075">
+                  <Icon name="phone-alt" />
+                  922 975 075
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@gesfinc.es">
+                  <Icon name="envelope" />
+                  info@gesfinc.es
+                </a>
+              </li>
+            </ul>
           </div>
-          <div className="gf-container">
-            <header className="gf-header gf-header--white">
-              <Logo />
-              <nav className="gf-nav" aria-label="Principal">
-                <Menu />
-                {controls}
-              </nav>
-            </header>
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="gf-container">
-            <div className="gf-topbar">
-              <ul>
-                <li>
-                  <Icon name="map-marker-alt" />
-                  Calle Juan Ortiz de Zárate 6 Edificio Mencey - Local A
-                  Peatonal 38300 La Orotava.
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="tel:+34922975075">
-                    <Icon name="phone-alt" />
-                    922 975 075
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:info@gesfinc.es">
-                    <Icon name="envelope" />
-                    info@gesfinc.es
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <header className="gf-header">
-              <Logo />
-              <nav className="gf-nav" aria-label="Principal">
-                <Menu />
-                {controls}
-              </nav>
-            </header>
-          </div>
-        </>
-      )}
+          <header className="gf-header">
+            <Logo />
+            <nav className="gf-nav" aria-label="Principal">
+              <Menu />
+              {controls}
+            </nav>
+          </header>
+        </div>
+      </div>
       {portalTarget &&
         createPortal(
           <>
@@ -208,11 +170,11 @@ export function Header({
                 <input
                   ref={inputRef}
                   name="s"
-                  placeholder="Search for anything"
+                  placeholder="Buscar en la web…"
                   autoComplete="off"
-                  aria-label="Search for anything"
+                  aria-label="Buscar"
                 />
-                <button type="submit" aria-label="Search for anything">
+                <button type="submit" aria-label="Buscar">
                   <Icon name="search" />
                 </button>
               </form>

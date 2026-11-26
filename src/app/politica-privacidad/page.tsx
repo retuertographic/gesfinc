@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function PoliticaPrivacidadPage() {
   return (
-    <BlogShell footer className="gf-bl--srcfooter">
+    <BlogShell footer>
       <PageTitle title="Política de privacidad" />
       <div className="gf-bl-wrap gf-bl-legal">
         <LegalText html={privacidadHtml} />

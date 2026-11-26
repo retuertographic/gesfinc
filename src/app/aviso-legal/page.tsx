@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function AvisoLegalPage() {
   return (
-    <BlogShell footer className="gf-bl--srcfooter">
+    <BlogShell footer>
       <PageTitle title="Aviso Legal" />
       <div className="gf-bl-wrap gf-bl-legal">
         <LegalText html={avisoLegalHtml} />

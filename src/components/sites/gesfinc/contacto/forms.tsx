@@ -145,12 +145,6 @@ const budgetFields: {
     label: "Dirección",
     placeholder: "Dirección de la Comunidad",
   },
-  // The source repeats this field with the same placeholder; kept.
-  {
-    name: "direccion2",
-    label: "Dirección (2)",
-    placeholder: "Dirección de la Comunidad",
-  },
   { name: "viviendas", label: "Nº viviendas", placeholder: "Nº viviendas" },
   {
     name: "locales",

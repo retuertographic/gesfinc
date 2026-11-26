@@ -29,8 +29,6 @@ const fields: {
   },
   { name: "comunidad", label: "Nombre de la Comunidad de propietarios" },
   { name: "direccion", label: "Dirección de la Comunidad" },
-  // The source repeats this placeholder on two fields; kept as is.
-  { name: "direccion2", label: "Dirección de la Comunidad" },
   { name: "viviendas", label: "Nº viviendas" },
   { name: "locales", label: "Nº locales comerciales" },
   { name: "garajes", label: "Nº plazas de garaje" },

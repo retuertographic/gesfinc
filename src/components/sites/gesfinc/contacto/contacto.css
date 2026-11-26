@@ -46,10 +46,9 @@
 .gf-ct-card--contact .gf-ct-form {
   margin: 25px;
 }
-/* Pedir Presupuesto: the source column has the shadow but no background colour. */
+/* Pedir Presupuesto. Improved: a real white card (the source had none, so the hero's V showed between fields). */
 .gf-ct-card--budget {
-  background: transparent;
-  padding: 21px 20px 20px;
+  padding: 50px 60px 44px;
 }
 
 /* ---------- Forms (Elementor form widget) ---------- */
@@ -169,7 +168,7 @@
   justify-content: center;
 }
 .gf-ct-btns--under {
-  margin-top: -45px;
+  margin-top: 70px;
 }
 .gf-ct-btns--office {
   margin-top: 135px;
@@ -511,48 +510,59 @@
   opacity: 1;
 }
 
-/* ---------- Sala de Juntas: header over the footer's blue band ---------- */
-.gf-ct-sala {
-  position: relative;
+/* ---------- Sala de Juntas (improved: own hero with the app buttons) ---------- */
+.gf-ct--sala .gf-ct-hero {
+  padding-bottom: 120px;
 }
-.gf-ct-sala-head {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3;
+.gf-ct-sala-gap {
+  height: 80px;
 }
-.gf-ct-sala-wedge {
-  position: absolute;
-  top: 140px;
-  left: 0;
-  width: 500px;
-  height: 53px;
-  z-index: 2;
-  fill: #000;
-  pointer-events: none;
+.gf-ct--sala .gf-ct-hero-lead {
+  color: rgba(255, 255, 255, 0.85);
 }
-.gf-ct-sala .gf-meeting {
-  height: 1010px;
-  padding-top: 403px;
+@media (max-width: 767px) {
+  .gf-ct--sala .gf-ct-hero-lead {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .gf-ct-sala-apps {
+    justify-content: center;
+  }
 }
-.gf-ct-sala .gf-meeting > .gf-shape--top {
-  display: none;
+.gf-ct-sala-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 36px;
+  padding-bottom: 40px;
+}
+.gf-ct-sala-app {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 5px;
+  background: #fff;
+  color: var(--gf-navy) !important;
+  font-family: var(--font-roboto), sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  transition:
+    background 0.3s,
+    color 0.3s;
+}
+.gf-ct-sala-app:hover {
+  background: var(--gf-red);
+  color: #fff !important;
+}
+.gf-ct-sala-app svg {
+  width: 16px;
+  height: 18px;
 }
 
 /* ======================= Responsive ======================= */
 @media (max-width: 1180px) {
-  .gf-ct-sala-head {
-    position: relative;
-    background: var(--gf-blue);
-  }
-  .gf-ct-sala-wedge {
-    display: none;
-  }
-  .gf-ct-sala .gf-meeting {
-    height: auto;
-    padding-top: 60px;
-  }
 }
 @media (max-width: 1024px) {
   .gf-ct-hero-body h1 {
@@ -564,7 +574,7 @@
     padding: 40px;
   }
   .gf-ct-card--budget {
-    padding: 21px 20px 20px;
+    padding: 40px;
   }
   .gf-ct-about {
     margin-top: 240px;
@@ -649,7 +659,7 @@
   }
   .gf-ct-card--budget {
     margin-top: 60px;
-    padding: 21px 20px 20px;
+    padding: 30px 20px;
   }
   .gf-ct-about {
     margin-top: 60px;
@@ -677,6 +687,4 @@
     padding-top: 20px;
   }
 }
-.gf-ct-sala .gf-meeting-rule hr {
-  border-top-color: transparent;
-} /* the source page loses this divider's colour too */
+/* the source page loses this divider's colour too */

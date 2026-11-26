@@ -63,42 +63,46 @@ export function DeveloperCredit({
 }
 
 /** "Sala de Juntas" band, footer, back-to-top and cookie dialog — identical on every source page. */
-export function SiteFooter() {
+export function SiteFooter({ meeting = true }: { meeting?: boolean }) {
   return (
     <>
-      {/* Sala de Juntas */}
-      <section className="gf-meeting">
-        <Shape d={SLANT_LEFT} position="top" />
-        <div className="gf-container">
-          <div className="gf-meeting-img">
-            <img src={`${IMG}/2529-1024x683.jpg`} alt="" loading="lazy" />
-            <h2 className="gf-quote">
-              “Usted tiene derecho al mejor servicio posible y eso nos hace
-              diferentes e imprescindibles.”
-            </h2>
-            <div className="gf-quote-by">Filosofia Gesfinc</div>
+      {/* Sala de Juntas (skipped on the Sala de Juntas page itself, where it would repeat the hero) */}
+      {meeting && (
+        <>
+          <section className="gf-meeting">
+            <Shape d={SLANT_LEFT} position="top" />
+            <div className="gf-container">
+              <div className="gf-meeting-img">
+                <img src={`${IMG}/2529-1024x683.jpg`} alt="" loading="lazy" />
+                <h2 className="gf-quote">
+                  “Usted tiene derecho al mejor servicio posible y eso nos hace
+                  diferentes e imprescindibles.”
+                </h2>
+                <div className="gf-quote-by">Filosofia Gesfinc</div>
+              </div>
+              <div className="gf-meeting-text">
+                <h2>Sala de Juntas Videoconferencia</h2>
+                <p>
+                  Abrimos nuestro nuevo servicio de Juntas a través de
+                  videoconferencia, para ello los clientes deberán tener
+                  instalada nuestra App en su dispositivo móvil
+                </p>
+                <a
+                  className="gf-btn gf-btn--square"
+                  href={withBase("/sala-de-juntas")}
+                >
+                  Sala de Juntas <Arrow />
+                </a>
+              </div>
+            </div>
+          </section>
+          <div className="gf-meeting-rule">
+            <div className="gf-container">
+              <hr />
+            </div>
           </div>
-          <div className="gf-meeting-text">
-            <h2>Sala de Juntas Videoconferencia</h2>
-            <p>
-              Abrimos nuestro nuevo servicio de Juntas a través de
-              videoconferencia, para ello los clientes deberán tener instalada
-              nuestra App en su dispositivo móvil
-            </p>
-            <a
-              className="gf-btn gf-btn--square"
-              href={withBase("/sala-de-juntas")}
-            >
-              Sala de Juntas <Arrow />
-            </a>
-          </div>
-        </div>
-      </section>
-      <div className="gf-meeting-rule">
-        <div className="gf-container">
-          <hr />
-        </div>
-      </div>
+        </>
+      )}
 
       {/* Footer */}
       <footer>
@@ -161,7 +165,7 @@ export function SiteFooter() {
         <div className="gf-copy">
           <div className="gf-container">
             <p>
-              Copyright 2020. Diseño X-Net Software.{" "}
+              © {new Date().getFullYear()} Gesfinc Canarias.{" "}
               <a href={withBase("/aviso-legal")}>Aviso Legal</a> |{" "}
               <a href={withBase("/politica-privacidad")}>
                 Políticas de Privacidad

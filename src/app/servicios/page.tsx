@@ -59,16 +59,16 @@ const others: { title: string; href: string; image: string | null }[] = [
     href: withBase("/inmobiliaria"),
     image: "Inmobiliaria-WEB-700x460-1.jpg",
   },
-  // These two have no featured image on the source; WordPress shows its generic file icon instead.
   {
     title: "Certificados electrónicos",
     href: withBase("/servicios/certificados-electronicos"),
-    image: null,
+    image:
+      "certificados-digitales-eadministracion-publica-iesa-004-800x600-1.jpg",
   },
   {
     title: "Certificaciones energéticas",
     href: withBase("/servicios/certificaciones-energeticas"),
-    image: null,
+    image: "GESFINC-170104-58-700x460-1.jpg",
   },
 ];
 

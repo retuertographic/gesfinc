@@ -13,6 +13,7 @@ export function IncidentForm() {
   const [status, setStatus] = useState<{ ok: boolean; text: string } | null>(
     null,
   );
+  const [fileNames, setFileNames] = useState<string[]>([]);
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -95,7 +96,25 @@ export function IncidentForm() {
         placeholder="Mensaje"
         aria-label="Mensaje"
       />
-      <input name="adjuntos" type="file" multiple aria-label="Archivos" />
+      {/* Spanish file picker (the browser's native one is labelled in the browser's language). */}
+      <label className="gf-bl-file">
+        <input
+          name="adjuntos"
+          type="file"
+          multiple
+          onChange={(e) =>
+            setFileNames(
+              Array.from(e.currentTarget.files ?? []).map((f) => f.name),
+            )
+          }
+        />
+        <span className="gf-bl-file-btn">Adjuntar archivos</span>
+        <span className="gf-bl-file-names">
+          {fileNames.length
+            ? fileNames.join(", ")
+            : `Ningún archivo seleccionado (máx. ${MAX_MB} MB)`}
+        </span>
+      </label>
       <button type="submit">Enviar</button>
       {status && (
         <p

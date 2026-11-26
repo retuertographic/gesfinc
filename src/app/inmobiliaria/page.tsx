@@ -34,8 +34,6 @@ export default function InmobiliariaPage() {
             Lo sentimos, pero no hay coincidencias en el listado con los
             criterios de esta búsqueda.
           </p>
-          {/* Stray "." left after the shortcode on the source. */}
-          <p className="gf-ex-dot">.</p>
         </div>
         <aside className="gf-ex-inmo-side">
           <h2>Búsqueda</h2>

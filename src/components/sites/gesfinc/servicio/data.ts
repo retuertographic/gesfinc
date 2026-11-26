@@ -42,7 +42,7 @@ const card = (
   image,
 });
 const C = {
-  integral: (t = "Servicio Integal") =>
+  integral: (t = "Servicio Integral") =>
     card(t, withBase("/servicios/servicio-integral"), "SLA_7470-700x466.jpg"),
   integralAlt: (t: string) =>
     card(t, withBase("/servicios/servicio-integral"), "SLA_7464-700x460-1.jpg"),
@@ -78,15 +78,18 @@ const C = {
       withBase("/inmobiliaria"),
       "Inmobiliaria-WEB-700x460-1.jpg",
     ),
-  // No featured image on the source: WordPress shows its generic file icon (default.svg).
   certificados: () =>
     card(
       "Certificados electrónicos",
       withBase("/servicios/certificados-electronicos"),
-      null,
+      "certificados-digitales-eadministracion-publica-iesa-004-800x600-1.jpg",
     ),
   certificaciones: (t = "Certificaciones energéticas") =>
-    card(t, withBase("/servicios/certificaciones-energeticas"), null),
+    card(
+      t,
+      withBase("/servicios/certificaciones-energeticas"),
+      "GESFINC-170104-58-700x460-1.jpg",
+    ),
 };
 
 export const OTHERS: Record<string, OtherCard[]> = {
@@ -140,11 +143,11 @@ export const OTHERS: Record<string, OtherCard[]> = {
     C.juridica(),
     C.limpieza(),
     C.jardineria(),
-    C.mantenimiento("DSC_1519-700x460-1.jpg", "Mantenimientos"),
+    C.mantenimiento("DSC_1519-700x460-1.jpg", "Mantenimiento"),
     C.seguros(),
     C.inmobiliaria(),
     // Source href is the broken "//single-portfolio"; linked to the intended page.
-    C.certificaciones("Certificados energéticos"),
+    C.certificaciones(),
   ],
   "certificaciones-energeticas": [
     C.integral(),
@@ -177,7 +180,7 @@ export const OTHERS: Record<string, OtherCard[]> = {
     C.seguros(),
     C.inmobiliaria(),
     C.certificados(),
-    C.certificaciones("Certificados energéticos"),
+    C.certificaciones(),
   ],
   "asesoria-juridica-integral": [
     C.integral("Servicio Integral"),

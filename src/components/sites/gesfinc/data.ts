@@ -95,7 +95,7 @@ export const services: { title: string; image: string | null; href: string }[] =
     },
     {
       title: "Certificaciones Energéticas",
-      image: null,
+      image: "GESFINC-170104-58-700x460-1.jpg",
       href: withBase("/servicios/certificaciones-energeticas"),
     },
     {
