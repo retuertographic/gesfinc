@@ -43,7 +43,7 @@ export default function AdministradorDeFincasPage() {
     <ServicePage>
       <ServiceHero
         // Literal source text: the "<br" in the Elementor heading is malformed and renders as text.
-        title="Administración de fincas <brde Fincas"
+        title="Administración de Fincas"
         titleSizeMobile={28}
         texts={[
           "Este Departamento se encarga de gestionar todas las actividades relacionadas con la Administración:",

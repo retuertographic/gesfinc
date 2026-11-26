@@ -39,14 +39,14 @@ export function NoticiasArchive() {
                 width={25}
                 height={25}
               />
-              <span>by&nbsp;X-Net</span>
+              <span>Gesfinc Canarias</span>
             </div>
             <a
               className="gf-bl-more"
               href={withBase(`/${p.slug}`)}
               title={p.title}
             >
-              Continue Reading
+              Seguir leyendo
               <i aria-hidden="true" />
             </a>
           </div>

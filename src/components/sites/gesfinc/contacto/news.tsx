@@ -91,7 +91,7 @@ function NewsCard({ post, order }: { post: NewsPost; order: number }) {
         <p>{post.excerpt}</p>
         <div className="gf-ct-post-more">
           <a href={post.href} title={post.title}>
-            Continue Reading
+            Seguir leyendo
             <span />
           </a>
         </div>

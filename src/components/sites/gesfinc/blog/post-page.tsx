@@ -21,7 +21,7 @@ function PostNav({ post, dir }: { post: Post; dir: "prev" | "next" }) {
           <span>{post.title}</span>
         </div>
         <div className="gf-bl-pn-anchor">
-          {dir === "prev" ? "Previous Article" : "Next Article"}
+          {dir === "prev" ? "Artículo anterior" : "Artículo siguiente"}
         </div>
       </a>
     </div>
@@ -43,7 +43,7 @@ export function PostPage({ slug }: { slug: string }) {
               <a href={withBase("/category/noticias")}>Noticias</a>
             </span>
             <h1>{post.title}</h1>
-            <div className="gf-bl-hero-by">By&nbsp;X-Net</div>
+            <div className="gf-bl-hero-by">Gesfinc Canarias</div>
           </div>
         </div>
       </div>

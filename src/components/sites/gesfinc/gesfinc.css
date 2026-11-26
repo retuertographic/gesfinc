@@ -1,14 +1,16 @@
 /* Styles for the gesfinc.com home page clone. Values measured from the source at 1440px and 390px. */
 
-/* GlacialIndifference @font-face rules are emitted from src/app/layout.tsx (they need the base path). */
-
 .gf {
   --gf-navy: rgb(14, 48, 93);
   --gf-red: rgb(255, 10, 10);
   --gf-blue: rgba(44, 61, 132, 0.91);
   --gf-grey: rgb(126, 128, 144);
-  --gf-reg: "GlacialIndifference-Regular", sans-serif;
-  --gf-bold: "GlacialIndifference-Bold", sans-serif;
+  --gf-reg: var(--font-glacial-regular), sans-serif;
+  --gf-bold: var(--font-glacial-bold), sans-serif;
+  --gf-ct-poppins: var(--font-poppins);
+  --gf-ex-poppins: var(--font-poppins);
+  --gf-ct-roboto: var(--font-roboto);
+  --gf-ex-roboto: var(--font-roboto);
   font-family: var(--font-roboto), sans-serif;
   font-size: 16px;
   line-height: 1.8;
@@ -154,6 +156,18 @@
   width: 100px;
   height: 100px;
 }
+/* Improvement: the red/blue logo gets a white badge so it stays legible on the blue header band. */
+.gf-header .gf-logo img {
+  background: #fff;
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+/* Same header on a solid band for pages without a coloured hero (legal pages, posts, Empresa…). */
+.gf-hbar {
+  background: rgb(63, 78, 143);
+  padding-bottom: 14px;
+}
 .gf-nav {
   flex: 1;
   display: flex;
@@ -278,7 +292,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 130px;
+  height: 90px;
   background: #fff;
   z-index: 40;
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
@@ -296,27 +310,19 @@
   align-items: center;
 }
 .gf-sticky .gf-logo img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 .gf-sticky .gf-nav {
-  justify-content: flex-start;
-  align-items: flex-start;
-  position: relative;
-  padding-top: 18px;
+  align-items: center;
 }
 .gf-sticky .gf-menu {
-  flex-wrap: wrap;
-  gap: 4px 44px;
-  margin-right: 50px;
+  flex-wrap: nowrap;
 }
 .gf-sticky .gf-menu > li > a {
   color: var(--gf-navy);
 }
 .gf-sticky .gf-search-btn {
-  position: absolute;
-  right: 10px;
-  bottom: 18px;
   color: var(--gf-navy);
 }
 .gf-sticky .gf-burger {
@@ -355,7 +361,7 @@
   border: 0;
   outline: 0;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: var(--gf-reg);
   font-size: 36px;
   padding: 18px 0;
   min-width: 0;
