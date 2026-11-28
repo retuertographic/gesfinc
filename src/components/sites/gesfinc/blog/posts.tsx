@@ -23,10 +23,10 @@ export const posts: Post[] = [
   {
     slug: "proximamente-juntas-por-videoconferencia",
     title: "Próximamente: Juntas por videoconferencia",
-    hero: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.jpg`,
-    navThumb: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.jpg`,
+    hero: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.webp`,
+    navThumb: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.webp`,
     archiveImage: {
-      src: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.jpg`,
+      src: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.webp`,
       width: 270,
       height: 154,
     },
@@ -53,10 +53,10 @@ export const posts: Post[] = [
   {
     slug: "modelos-fiscales-exigibles-a-las-comunidades-de-propietarios",
     title: "Modelos fiscales exigibles a las comunidades de propietarios",
-    hero: `${IMG}/Anuncio-347.jpg`,
-    navThumb: `${IMG}/Anuncio-347-610x610.jpg`,
+    hero: `${IMG}/Anuncio-347.webp`,
+    navThumb: `${IMG}/Anuncio-347-610x610.webp`,
     archiveImage: {
-      src: `${IMG}/Anuncio-347-656x604.jpg`,
+      src: `${IMG}/Anuncio-347-656x604.webp`,
       width: 656,
       height: 604,
     },
@@ -68,7 +68,7 @@ export const posts: Post[] = [
       <div className="gf-bl-body-text">
         <p>
           <ZoomImage
-            src={`${IMG}/Anuncio-347-e1486123237353.jpg`}
+            src={`${IMG}/Anuncio-347-e1486123237353.webp`}
             alt="Anuncio 347"
             width={656}
             height={645}
@@ -97,10 +97,10 @@ export const posts: Post[] = [
   {
     slug: "app-gesfinc",
     title: "App Gesfinc",
-    hero: `${IMG}/APP-GESFINC-43685274_xxl.jpg`,
-    navThumb: `${IMG}/APP-GESFINC-43685274_xxl-610x548.jpg`,
+    hero: `${IMG}/APP-GESFINC-43685274_xxl.webp`,
+    navThumb: `${IMG}/APP-GESFINC-43685274_xxl-610x548.webp`,
     archiveImage: {
-      src: `${IMG}/APP-GESFINC-43685274_xxl-960x548.jpg`,
+      src: `${IMG}/APP-GESFINC-43685274_xxl-960x548.webp`,
       width: 960,
       height: 548,
     },
@@ -140,10 +140,10 @@ export const posts: Post[] = [
     slug: "felices-fiestas-y-prospero-ano-2018",
     // The source title really says 2017 while the slug and text say 2018.
     title: "Felices fiestas, y próspero año 2017",
-    hero: `${IMG}/Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100.jpg`,
-    navThumb: `${IMG}/Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-610x548.jpg`,
+    hero: `${IMG}/Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100.webp`,
+    navThumb: `${IMG}/Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-610x548.webp`,
     archiveImage: {
-      src: `${IMG}/Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-960x548.jpg`,
+      src: `${IMG}/Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-960x548.webp`,
       width: 960,
       height: 548,
     },
@@ -169,10 +169,10 @@ export const posts: Post[] = [
   {
     slug: "gesfinc-por-el-deporte-canario",
     title: "GesFinc por el Deporte Canario",
-    hero: `${IMG}/IMG_7278-1024x768-1.jpg`,
-    navThumb: `${IMG}/IMG_7278-1024x768-1-610x610.jpg`,
+    hero: `${IMG}/IMG_7278-1024x768-1.webp`,
+    navThumb: `${IMG}/IMG_7278-1024x768-1-610x610.webp`,
     archiveImage: {
-      src: `${IMG}/IMG_7278-1024x768-1-960x604.jpg`,
+      src: `${IMG}/IMG_7278-1024x768-1-960x604.webp`,
       width: 960,
       height: 604,
     },

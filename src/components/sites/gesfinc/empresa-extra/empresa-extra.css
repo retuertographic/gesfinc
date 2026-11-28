@@ -617,7 +617,7 @@
   padding: 15px 30px;
   border-top: 1px solid rgb(234, 234, 234);
   font: 12px/15.6px var(--gf-ex-body);
-  color: rgb(173, 173, 173);
+  color: rgb(112, 112, 112);
 }
 .gf-ex-card-meta span + span::before {
   content: "•";

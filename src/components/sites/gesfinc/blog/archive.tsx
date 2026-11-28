@@ -14,7 +14,7 @@ export function NoticiasArchive() {
             href={withBase(`/${p.slug}`)}
             aria-label={p.title}
           >
-            <img
+            <img decoding="async"
               src={p.archiveImage.src}
               alt=""
               width={p.archiveImage.width}
@@ -33,8 +33,8 @@ export function NoticiasArchive() {
           <p className="gf-bl-card-excerpt">{p.excerpt}</p>
           <div className="gf-bl-card-foot">
             <div className="gf-bl-author">
-              <img
-                src={`${IMG}/gravatar-mm-200.jpg`}
+              <img loading="lazy" decoding="async"
+                src={`${IMG}/gravatar-mm-200.webp`}
                 alt=""
                 width={25}
                 height={25}

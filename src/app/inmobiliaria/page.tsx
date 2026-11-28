@@ -41,7 +41,8 @@ export default function InmobiliariaPage() {
           <article className="gf-ex-card">
             <a className="gf-ex-card-thumb" href={POST} tabIndex={-1}>
               <img
-                src={`${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.jpg`}
+                decoding="async"
+                src={`${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.webp`}
                 alt=""
                 width={270}
                 height={154}
@@ -51,7 +52,8 @@ export default function InmobiliariaPage() {
             </a>
             <div className="gf-ex-card-avatar">
               <img
-                src={`${IMG}/gravatar-mm-200.jpg`}
+                decoding="async"
+                src={`${IMG}/gravatar-mm-200.webp`}
                 alt="X-Net"
                 width={60}
                 height={60}

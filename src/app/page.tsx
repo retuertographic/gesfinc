@@ -24,11 +24,11 @@ export default function Home() {
         <Header />
         <div className="gf-container gf-hero-body">
           <div className="gf-hero-text">
-            <h2>
+            <h1>
               Nuevos aires
               <br />
               en Gesfinc
-            </h2>
+            </h1>
             <p>
               Nuestro libro de estilo de la administración de fincas, 15 años de
               experiencia y crecimiento nos han permitido alcanzar una cuota
@@ -38,7 +38,10 @@ export default function Home() {
               <span>
                 <Arrow />
               </span>
-              <span>Más información</span>
+              <span>
+                Más información
+                <span className="sr-only"> sobre Gesfinc Canarias</span>
+              </span>
             </a>
           </div>
           <HeroGallery />
@@ -73,7 +76,9 @@ export default function Home() {
           <div className="gf-card gf-card--low">
             <div className="gf-card-icon">
               <img
-                src={`${IMG}/home7_icon1.png`}
+                loading="lazy"
+                decoding="async"
+                src={`${IMG}/home7_icon1.webp`}
                 alt=""
                 width={92}
                 height={58}
@@ -89,7 +94,9 @@ export default function Home() {
           <div className="gf-card">
             <div className="gf-card-icon">
               <img
-                src={`${IMG}/home7_icon2.png`}
+                loading="lazy"
+                decoding="async"
+                src={`${IMG}/home7_icon2.webp`}
                 alt=""
                 width={70}
                 height={73}
@@ -111,17 +118,23 @@ export default function Home() {
         <div className="gf-container">
           <div className="gf-know-art">
             <img
-              src={`${IMG}/People-clapping-on-balconies-rafiki-1024x1024.png`}
+              loading="lazy"
+              decoding="async"
+              src={`${IMG}/People-clapping-on-balconies-rafiki-1024x1024.webp`}
               alt=""
               style={{ left: -104, top: -7, width: 328, height: 328 }}
             />
             <img
-              src={`${IMG}/Neighbours-on-balconies-or-windows-during-Coronavirus-rafiki-1024x1024.png`}
+              loading="lazy"
+              decoding="async"
+              src={`${IMG}/Neighbours-on-balconies-or-windows-during-Coronavirus-rafiki-1024x1024.webp`}
               alt=""
               style={{ left: -65, top: 260, width: 308, height: 308 }}
             />
             <img
-              src={`${IMG}/vecinos-balcones-concepto-cuarentena_23-2148514127.jpg`}
+              loading="lazy"
+              decoding="async"
+              src={`${IMG}/vecinos-balcones-concepto-cuarentena_23-2148514127.webp`}
               alt=""
               style={{ left: 182, top: -9, width: 456, height: 456 }}
             />
@@ -173,7 +186,7 @@ export default function Home() {
 
       {/* Descarga nuestra App */}
       <section className="gf-container gf-app">
-        <h1>Descarga nuestra App</h1>
+        <h2>Descarga nuestra App</h2>
         <div className="gf-app-buttons">
           <div>
             <a
@@ -199,13 +212,18 @@ export default function Home() {
       {/* Blog */}
       <section className="gf-blog">
         <div className="gf-container">
-          <h1>Artículos de nuestro blog</h1>
+          <h2>Artículos de nuestro blog</h2>
         </div>
         <div className="gf-posts">
           {posts.map((p) => (
             <article key={p.href} className="gf-post">
               <a className="gf-post-thumb" href={p.href}>
-                <img src={p.image} alt={p.title} loading="lazy" />
+                <img
+                  decoding="async"
+                  src={p.image}
+                  alt={p.title}
+                  loading="lazy"
+                />
               </a>
               <span className="gf-badge">Noticias</span>
               <div className="gf-post-body">
