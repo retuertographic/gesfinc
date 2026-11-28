@@ -34,7 +34,9 @@ function Logo() {
   return (
     <Link href="/" className="gf-logo" aria-label="Gesfinc Canarias – Inicio">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img loading="eager" decoding="async"
+      <img
+        loading="eager"
+        decoding="async"
         src={`${IMG}/Logo-Gesfinc-200.webp`}
         alt="Gesfinc Canarias"
         width={100}

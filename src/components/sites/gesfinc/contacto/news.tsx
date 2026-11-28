@@ -70,7 +70,8 @@ function NewsCard({ post, order }: { post: NewsPost; order: number }) {
   return (
     <article className="gf-ct-post" style={{ order }}>
       <div className="gf-ct-post-img">
-        <img decoding="async"
+        <img
+          decoding="async"
           src={`${IMG}/${post.image}`}
           alt=""
           width={post.width}
@@ -83,11 +84,11 @@ function NewsCard({ post, order }: { post: NewsPost; order: number }) {
         <div className="gf-ct-post-cat">
           <a href={withBase("/category/noticias")}>Noticias</a>
         </div>
-        <h5>
+        <h2>
           <a href={post.href} title={post.title}>
             {post.title}
           </a>
-        </h5>
+        </h2>
         <p>{post.excerpt}</p>
         <div className="gf-ct-post-more">
           <a href={post.href} title={post.title}>

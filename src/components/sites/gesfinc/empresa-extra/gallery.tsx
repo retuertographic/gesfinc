@@ -84,7 +84,9 @@ export function ExGallery({ images }: { images: GalleryImage[] }) {
     >
       <div className="gf-ex-gallery-track" ref={track}>
         {images.map((img, i) => (
-          <img loading={i < 2 ? "eager" : "lazy"} decoding="async"
+          <img
+            loading={i < 2 ? "eager" : "lazy"}
+            decoding="async"
             key={img.src}
             src={`${IMG}/${img.src}`}
             alt=""

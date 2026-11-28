@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { preload } from "react-dom";
 import { withBase } from "@/lib/base-path";
 import "@/components/sites/gesfinc/gesfinc.css";
 import { Header } from "@/components/sites/gesfinc/header";
@@ -7,7 +8,7 @@ import {
   HeroGallery,
   ServicesCarousel,
 } from "@/components/sites/gesfinc/widgets";
-import { apps, IMG, posts } from "@/components/sites/gesfinc/data";
+import { apps, heroImages, IMG, posts } from "@/components/sites/gesfinc/data";
 import {
   Arrow,
   Shape,
@@ -17,6 +18,8 @@ import {
 } from "@/components/sites/gesfinc/shared";
 
 export default function Home() {
+  // Start fetching the hero image (the LCP element) as early as possible.
+  preload(heroImages[0], { as: "image", fetchPriority: "high" });
   return (
     <main className="gf">
       {/* Hero + header */}
@@ -191,7 +194,7 @@ export default function Home() {
           <div>
             <a
               className="gf-app-btn"
-              style={{ background: "rgb(92, 184, 92)" }}
+              style={{ background: "rgb(46, 125, 50)" }}
               href={apps.android}
             >
               <Icon name="android" /> Descargar

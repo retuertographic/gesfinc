@@ -36,7 +36,8 @@ export function HeroGallery() {
         style={{ transform: `translateX(${-index * cell}px)` }}
       >
         {heroImages.map((src, i) => (
-          <img decoding="async"
+          <img
+            decoding="async"
             key={src}
             src={src}
             alt=""
@@ -138,7 +139,8 @@ export function ServicesCarousel() {
                 aria-label={i !== index ? svc.title : undefined}
               >
                 {svc.image && (
-                  <img decoding="async"
+                  <img
+                    decoding="async"
                     src={svc.image}
                     alt={svc.title}
                     loading="lazy"

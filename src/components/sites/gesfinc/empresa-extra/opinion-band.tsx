@@ -159,7 +159,12 @@ export function OpinionBand() {
             className={`gf-ex-deco gf-ex-deco--${d.id}${d.loop ? ` gf-ex-loop-${d.loop}` : ""}`}
             aria-hidden="true"
           >
-            <img loading="lazy" decoding="async" src={`${IMG}/${d.img}`} alt="" />
+            <img
+              loading="lazy"
+              decoding="async"
+              src={`${IMG}/${d.img}`}
+              alt=""
+            />
           </div>
         ))}
         <h2>Su opinión es muy importante para nosotros</h2>

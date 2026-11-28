@@ -45,7 +45,11 @@ const C = {
   integral: (t = "Servicio Integral") =>
     card(t, withBase("/servicios/servicio-integral"), "SLA_7470-700x466.webp"),
   integralAlt: (t: string) =>
-    card(t, withBase("/servicios/servicio-integral"), "SLA_7464-700x460-1.webp"),
+    card(
+      t,
+      withBase("/servicios/servicio-integral"),
+      "SLA_7464-700x460-1.webp",
+    ),
   admin: (t = "Administración de fincas") =>
     card(
       t,
@@ -71,7 +75,11 @@ const C = {
   jardineria: (img = "DSC_1833-300x200-1.webp", t = "Jardinería") =>
     card(t, withBase("/servicios/jardineria"), img),
   seguros: () =>
-    card("Seguros", withBase("/servicios/seguros"), "Seguro-WEB-700x460-1.webp"),
+    card(
+      "Seguros",
+      withBase("/servicios/seguros"),
+      "Seguro-WEB-700x460-1.webp",
+    ),
   inmobiliaria: () =>
     card(
       "Inmobiliaria",
