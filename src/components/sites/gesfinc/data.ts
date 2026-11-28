@@ -73,14 +73,14 @@ export const nav: NavItem[] = [
 ];
 
 export const heroImages = [
-  "APP-GESFINC-43685274_xxl.jpg",
-  "GESFINC-170509-149-1170x548-1.jpg",
-  "GESFINC-170509-121-1170x548-1.jpg",
-  "GESFINC-170104-48-1170x548-1.jpg",
-  "SLA_7470-1170x548-1.jpg",
-  "GESFINC-170509-64-1170x548-1.jpg",
-  "Buzones-WEB.jpg",
-  "50853954_xxl-ADMON.jpg",
+  "APP-GESFINC-43685274_xxl.webp",
+  "GESFINC-170509-149-1170x548-1.webp",
+  "GESFINC-170509-121-1170x548-1.webp",
+  "GESFINC-170104-48-1170x548-1.webp",
+  "SLA_7470-1170x548-1.webp",
+  "GESFINC-170509-64-1170x548-1.webp",
+  "Buzones-WEB.webp",
+  "50853954_xxl-ADMON.webp",
 ].map((f) => `${IMG}/${f}`);
 
 // The source slide for "Certificaciones Energéticas" points at a missing image
@@ -90,52 +90,52 @@ export const services: { title: string; image: string | null; href: string }[] =
     {
       title: "Certificados Electrónicos",
       image:
-        "certificados-digitales-eadministracion-publica-iesa-004-800x600-1.jpg",
+        "certificados-digitales-eadministracion-publica-iesa-004-800x600-1.webp",
       href: withBase("/servicios/certificados-electronicos"),
     },
     {
       title: "Certificaciones Energéticas",
-      image: "GESFINC-170104-58-700x460-1.jpg",
+      image: "GESFINC-170104-58-700x460-1.webp",
       href: withBase("/servicios/certificaciones-energeticas"),
     },
     {
       title: "Inmobiliaria",
-      image: "Inmobiliaria-WEB-700x460-1.jpg",
+      image: "Inmobiliaria-WEB-700x460-1.webp",
       href: withBase("/inmobiliaria"),
     },
     {
       title: "Seguros",
-      image: "Seguro-WEB-700x460-1.jpg",
+      image: "Seguro-WEB-700x460-1.webp",
       href: withBase("/servicios/seguros"),
     },
     {
       title: "Asesoría Jurídica Integral",
-      image: "SLA_7474-700x460-1.jpg",
+      image: "SLA_7474-700x460-1.webp",
       href: withBase("/servicios/asesoria-juridica-integral"),
     },
     {
       title: "Servicio Integral",
-      image: "SLA_7464-700x460-1.jpg",
+      image: "SLA_7464-700x460-1.webp",
       href: withBase("/servicios/servicio-integral"),
     },
     {
       title: "Administrador de Fincas",
-      image: "SLA_7449-700x460-1.jpg",
+      image: "SLA_7449-700x460-1.webp",
       href: withBase("/servicios/administrador-de-fincas"),
     },
     {
       title: "Mantenimiento",
-      image: "GESFINC-170509-64-1170x548-1.jpg",
+      image: "GESFINC-170509-64-1170x548-1.webp",
       href: withBase("/servicios/mantenimiento"),
     },
     {
       title: "Limpieza",
-      image: "DSC_1780-700x460-1.jpg",
+      image: "DSC_1780-700x460-1.webp",
       href: withBase("/servicios/limpieza"),
     },
     {
       title: "Jardinería",
-      image: "DSC_1853-700x460-1.jpg",
+      image: "DSC_1853-700x460-1.webp",
       href: withBase("/servicios/jardineria"),
     },
   ].map((s) => ({ ...s, image: s.image ? `${IMG}/${s.image}` : null }));
@@ -144,7 +144,7 @@ export const posts = [
   {
     title: "Próximamente: Juntas por videoconferencia",
     href: withBase("/proximamente-juntas-por-videoconferencia"),
-    image: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.jpg`,
+    image: `${IMG}/AdobeStock_340095251-Videoconferencia-270x154-1.webp`,
     excerpt:
       "Desde que el pasado 11 de marzo la Organización Mundial de la Salud declaró la situación de pandemia en todo el mundo son muchas las medidas que se han ido adoptando para paliar sus efectos. En la actualidad estamos trabajando",
     date: "11 junio, 2020",
@@ -154,7 +154,7 @@ export const posts = [
     href: withBase(
       "/modelos-fiscales-exigibles-a-las-comunidades-de-propietarios",
     ),
-    image: `${IMG}/Anuncio-347.jpg`,
+    image: `${IMG}/Anuncio-347.webp`,
     excerpt:
       "El Consejo General de Colegios de Administradores de fincas ha publicado una Nota de prensa en la que hace hincapié en la obligación de las comunidades de propietarios de declarar las operaciones que superen los 3000 €. Por otra parte, el Colegio",
     date: "3 febrero, 2017",
@@ -162,7 +162,7 @@ export const posts = [
   {
     title: "App Gesfinc",
     href: withBase("/app-gesfinc"),
-    image: `${IMG}/APP-GESFINC-43685274_xxl.jpg`,
+    image: `${IMG}/APP-GESFINC-43685274_xxl.webp`,
     excerpt:
       "Consigue aquí la App de Gesfinc para tu móvil: Descargar Gesfinc para IOS Descargar Gesfinc para Android",
     date: "21 diciembre, 2016",

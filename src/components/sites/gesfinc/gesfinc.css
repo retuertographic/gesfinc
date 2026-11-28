@@ -2,9 +2,9 @@
 
 .gf {
   --gf-navy: rgb(14, 48, 93);
-  --gf-red: rgb(255, 10, 10);
+  --gf-red: rgb(210, 12, 12);
   --gf-blue: rgba(44, 61, 132, 0.91);
-  --gf-grey: rgb(126, 128, 144);
+  --gf-grey: rgb(98, 100, 115);
   --gf-reg: var(--font-glacial-regular), sans-serif;
   --gf-bold: var(--font-glacial-bold), sans-serif;
   --gf-ct-poppins: var(--font-poppins);
@@ -463,7 +463,7 @@
   width: 456px;
   flex: none;
 }
-.gf-hero-text h2 {
+.gf-hero-text h1 {
   font-family: var(--gf-bold);
   font-weight: 700;
   font-size: 55px;
@@ -579,7 +579,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 30.6px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-about-text p:first-of-type {
   margin-top: 50px;
@@ -833,7 +833,7 @@
 .gf-app {
   padding: 10px 10px;
 }
-.gf-app h1 {
+.gf-app h2 {
   margin: 70px 0 20px;
   font-family: var(--font-roboto-slab), serif;
   font-weight: 500;
@@ -875,7 +875,7 @@
 .gf-blog {
   padding-top: 60px;
 }
-.gf-blog h1 {
+.gf-blog h2 {
   margin-top: 70px;
   font-family: var(--gf-bold);
   font-weight: 700;
@@ -956,7 +956,7 @@
   border-top: 1px solid rgb(234, 234, 234);
   font-size: 12px;
   line-height: 15.6px;
-  color: rgb(173, 173, 173);
+  color: rgb(112, 112, 112);
 }
 .gf-post-meta span + span::before {
   content: "•";
@@ -1234,22 +1234,23 @@
   font-size: 12px;
 }
 .gf-toggle {
-  width: 21px;
-  height: 13px;
-  border-radius: 10px;
+  width: 40px;
+  height: 24px;
+  border-radius: 12px;
   background: rgb(250, 120, 60);
   position: relative;
   border: 0;
   padding: 0;
   cursor: pointer;
+  flex: none;
 }
 .gf-toggle::after {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 9px;
-  height: 9px;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: #fff;
   transition: left 0.2s;
@@ -1258,7 +1259,7 @@
   background: rgb(30, 115, 190);
 }
 .gf-toggle[aria-checked="true"]::after {
-  left: 10px;
+  left: 19px;
 }
 .gf-cookie-btns {
   display: flex;
@@ -1471,7 +1472,7 @@
   .gf-hero {
     padding-bottom: 0;
   }
-  .gf-hero-text h2 {
+  .gf-hero-text h1 {
     font-size: 36px;
     line-height: 43.2px;
   }
@@ -1552,7 +1553,7 @@
   .gf-app {
     text-align: center;
   }
-  .gf-app h1 {
+  .gf-app h2 {
     font-size: 32px;
     line-height: 38.4px;
     margin-top: 40px;
@@ -1562,7 +1563,7 @@
     gap: 20px;
     align-items: center;
   }
-  .gf-blog h1 {
+  .gf-blog h2 {
     font-size: 30px;
     line-height: 45px;
   }

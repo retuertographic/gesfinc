@@ -90,14 +90,14 @@ export function ServiceHero({
         </div>
       </div>
       <div className="gf-sd-hero-art">
-        <img
+        <img loading="eager" decoding="async"
           className="gf-sd-hero-circle"
-          src={`${IMG}/service1_red_circle.png`}
+          src={`${IMG}/service1_red_circle.webp`}
           alt=""
           width={1066}
           height={1058}
         />
-        <img
+        <img loading="eager" fetchPriority="high" decoding="async"
           className="gf-sd-hero-photo"
           src={photo.src}
           alt=""
@@ -149,9 +149,9 @@ export function ServiceRow({
   const media = (
     <div className="gf-sd-row-media">
       {imageSide === "left" && (
-        <img
+        <img loading="lazy" decoding="async"
           className="gf-sd-row-circle"
-          src={`${IMG}/service1_red_circle.png`}
+          src={`${IMG}/service1_red_circle.webp`}
           alt=""
           width={1066}
           height={1058}
@@ -163,7 +163,7 @@ export function ServiceRow({
         className="gf-sd-row-photo"
         style={{ top: `${imageTop}%` }}
       >
-        <img src={image.src} alt="" width={image.width} height={image.height} />
+        <img loading="lazy" decoding="async" src={image.src} alt="" width={image.width} height={image.height} />
       </ScrollDrift>
     </div>
   );
@@ -183,6 +183,9 @@ export function ServiceRow({
           <a className="gf-sd-btn" href={button}>
             <Icon name="arrow-right" />
             Más información
+            {typeof heading === "string" && (
+              <span className="sr-only"> sobre {heading}</span>
+            )}
           </a>
         )}
       </div>
@@ -199,7 +202,7 @@ function Card({ card }: { card: OtherCard }) {
         href={card.href}
         aria-label={card.title}
       >
-        <img
+        <img decoding="async"
           src={card.image ? `${IMG}/${card.image}` : `${IMG}/default.svg`}
           alt=""
           loading="lazy"

@@ -73,7 +73,7 @@ export function SiteFooter({ meeting = true }: { meeting?: boolean }) {
             <Shape d={SLANT_LEFT} position="top" />
             <div className="gf-container">
               <div className="gf-meeting-img">
-                <img src={`${IMG}/2529-1024x683.jpg`} alt="" loading="lazy" />
+                <img decoding="async" src={`${IMG}/2529-1024x683.webp`} alt="" loading="lazy" />
                 <h2 className="gf-quote">
                   “Usted tiene derecho al mejor servicio posible y eso nos hace
                   diferentes e imprescindibles.”
@@ -109,8 +109,8 @@ export function SiteFooter({ meeting = true }: { meeting?: boolean }) {
         <div className="gf-footer">
           <div className="gf-container">
             <div className="gf-footer-brand">
-              <img
-                src={`${IMG}/Logo-Gesfinc.png`}
+              <img loading="lazy" decoding="async"
+                src={`${IMG}/Logo-Gesfinc-260.webp`}
                 alt="Gesfinc Canarias"
                 width={130}
                 height={130}

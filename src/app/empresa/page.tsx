@@ -62,13 +62,17 @@ export default function EmpresaPage() {
 
       <section className="gf-em-admin">
         <img
+          loading="lazy"
+          decoding="async"
           className="gf-em-dots gf-em-dots--1"
-          src={`${IMG}/home3_oval_bg.png`}
+          src={`${IMG}/home3_oval_bg.webp`}
           alt=""
         />
         <img
+          loading="lazy"
+          decoding="async"
           className="gf-em-dots gf-em-dots--2"
-          src={`${IMG}/home3_oval_bg.png`}
+          src={`${IMG}/home3_oval_bg.webp`}
           alt=""
         />
         <div className="gf-container gf-em-admin-inner">
@@ -94,13 +98,17 @@ export default function EmpresaPage() {
           </div>
           <div className="gf-em-admin-art">
             <img
+              loading="lazy"
+              decoding="async"
               className="gf-em-art-back"
-              src={`${IMG}/Neighbours-on-balconies-or-windows-during-Coronavirus-rafiki-1024x1024.png`}
+              src={`${IMG}/Neighbours-on-balconies-or-windows-during-Coronavirus-rafiki-1024x1024.webp`}
               alt=""
             />
             <img
+              loading="lazy"
+              decoding="async"
               className="gf-em-art-front"
-              src={`${IMG}/vecinos-balcones-concepto-cuarentena_23-2148514127.jpg`}
+              src={`${IMG}/vecinos-balcones-concepto-cuarentena_23-2148514127.webp`}
               alt=""
             />
           </div>
@@ -109,7 +117,12 @@ export default function EmpresaPage() {
 
       <section className="gf-em-legal">
         <div className="gf-em-legal-img">
-          <img src={`${IMG}/SLA_7464-700x460-1.jpg`} alt="" />
+          <img
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/SLA_7464-700x460-1.webp`}
+            alt=""
+          />
         </div>
         <div className="gf-em-legal-text">
           <h2 className="gf-arial">ASESORAMIENTO LEGAL</h2>
@@ -129,13 +142,17 @@ export default function EmpresaPage() {
       <section className="gf-container gf-em-contact">
         <div className="gf-em-contact-art">
           <img
+            loading="lazy"
+            decoding="async"
             className="gf-em-woman"
-            src={`${IMG}/happy-young-woman-work-in-office-using-computer-PERMEN2-683x1024.jpg`}
+            src={`${IMG}/happy-young-woman-work-in-office-using-computer-PERMEN2-683x1024.webp`}
             alt=""
           />
           <img
+            loading="lazy"
+            decoding="async"
             className="gf-em-team"
-            src={`${IMG}/brainstorming-team-working-office-colleagues-PCD33AX-1024x1024.jpg`}
+            src={`${IMG}/brainstorming-team-working-office-colleagues-PCD33AX-1024x1024.webp`}
             alt=""
           />
         </div>

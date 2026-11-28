@@ -14,7 +14,7 @@ type Slide = {
 
 const SLIDES: Slide[] = [
   {
-    image: "young-businesswoman-smiling-at-office-LGQRJY2.jpg",
+    image: "young-businesswoman-smiling-at-office-LGQRJY2.webp",
     title: "Sala de Juntas Videoconferencia",
     text: "Abrimos nuestro nuevo servicio de Juntas a través de videoconferencia, para ello los clientes deberán tener instalado la herramienta Zoom.",
     link: {

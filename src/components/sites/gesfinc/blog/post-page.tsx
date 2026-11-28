@@ -17,7 +17,7 @@ function PostNav({ post, dir }: { post: Post; dir: "prev" | "next" }) {
     <div className={`gf-bl-pn gf-bl-pn--${dir}`}>
       <a href={withBase(`/${post.slug}`)}>
         <div className="gf-bl-pn-card">
-          <img src={post.navThumb} alt="" loading="lazy" />
+          <img decoding="async" src={post.navThumb} alt="" loading="lazy" />
           <span>{post.title}</span>
         </div>
         <div className="gf-bl-pn-anchor">

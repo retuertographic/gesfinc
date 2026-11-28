@@ -96,7 +96,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 30.6px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 
 .gf-sv-row {
@@ -135,7 +135,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 30.6px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-sv-copy {
   margin-bottom: 20px;
@@ -151,7 +151,7 @@
   margin-top: 0;
   padding: 12px 24px;
   border-radius: 3px;
-  background: rgb(251, 7, 7);
+  background: rgb(210, 12, 12);
   color: #fff !important;
   font-family: var(--font-roboto), sans-serif;
   font-size: 15px;
@@ -208,7 +208,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 28.9px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-sv-grid {
   display: grid;
@@ -257,7 +257,7 @@
   line-height: 21.6px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgb(153, 153, 153);
+  color: rgb(112, 112, 112);
   margin-bottom: 12px;
 }
 
@@ -445,7 +445,7 @@
   font-family: var(--font-karla), sans-serif;
   font-size: 16px;
   line-height: 28.8px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 
 .gf-em-admin {
@@ -501,7 +501,7 @@
   font-family: var(--font-karla), sans-serif;
   font-size: 20px;
   line-height: 34px;
-  color: rgb(126, 128, 144);
+  color: rgb(98, 100, 115);
 }
 .gf-em-admin-art {
   position: relative;
@@ -665,7 +665,7 @@
   font-family: var(--font-karla), sans-serif;
   font-size: 16px;
   line-height: 27.2px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-em-contact-cols a:hover {
   color: var(--gf-navy);

@@ -26,22 +26,22 @@ type Deco = {
 
 // Positions/sizes/opacity/blur live in CSS (.gf-ex-deco--<id>), from the Elementor post CSS.
 const DECOS: Deco[] = [
-  { id: "a", img: "purple_bubble.png", loop: "scale" },
-  { id: "b", img: "purple_bubble.png", loop: "bounce" },
-  { id: "c", img: "orange_bubble-1.png", loop: "bounce" },
+  { id: "a", img: "purple_bubble.webp", loop: "scale" },
+  { id: "b", img: "purple_bubble.webp", loop: "bounce" },
+  { id: "c", img: "orange_bubble-1.webp", loop: "bounce" },
   {
     id: "d",
-    img: "orange_triangle2.png",
+    img: "orange_triangle2.webp",
     scroll: { y: 200, rotateX: -360, smoothness: 60, disableBelow: 501 },
   },
   {
     id: "e",
-    img: "orange_triangle2.png",
+    img: "orange_triangle2.webp",
     scroll: { x: 70, rotateX: -360, smoothness: 60, disableBelow: 501 },
   },
   {
     id: "f",
-    img: "orange_triangle-1.png",
+    img: "orange_triangle-1.webp",
     scroll: {
       x: 300,
       y: 60,
@@ -53,7 +53,7 @@ const DECOS: Deco[] = [
   },
   {
     id: "g",
-    img: "orange_triangle-1.png",
+    img: "orange_triangle-1.webp",
     scroll: {
       x: -200,
       y: 60,
@@ -64,17 +64,17 @@ const DECOS: Deco[] = [
   },
   {
     id: "h",
-    img: "purple_bubble.png",
+    img: "purple_bubble.webp",
     scroll: { x: -100, y: -50, smoothness: 30, disableBelow: 769 },
   },
   {
     id: "i",
-    img: "purple_bubble.png",
+    img: "purple_bubble.webp",
     scroll: { x: -100, y: -50, smoothness: 30, disableBelow: 769 },
   },
   {
     id: "j",
-    img: "orange_bubble-1.png",
+    img: "orange_bubble-1.webp",
     scroll: {
       x: -200,
       y: -70,
@@ -159,7 +159,7 @@ export function OpinionBand() {
             className={`gf-ex-deco gf-ex-deco--${d.id}${d.loop ? ` gf-ex-loop-${d.loop}` : ""}`}
             aria-hidden="true"
           >
-            <img src={`${IMG}/${d.img}`} alt="" />
+            <img loading="lazy" decoding="async" src={`${IMG}/${d.img}`} alt="" />
           </div>
         ))}
         <h2>Su opinión es muy importante para nosotros</h2>

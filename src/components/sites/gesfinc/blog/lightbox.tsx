@@ -35,7 +35,7 @@ export function ZoomImage({
           setOpen(true);
         }}
       >
-        <img
+        <img loading="lazy" decoding="async"
           className="gf-bl-inline-img"
           src={src}
           alt={alt}
@@ -51,7 +51,7 @@ export function ZoomImage({
             aria-label={alt}
             onClick={() => setOpen(false)}
           >
-            <img src={src} alt={alt} width={width} height={height} />
+            <img loading="lazy" decoding="async" src={src} alt={alt} width={width} height={height} />
             <button type="button" aria-label="Cerrar" autoFocus>
               <Icon name="times" />
             </button>

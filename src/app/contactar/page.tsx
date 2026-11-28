@@ -46,14 +46,23 @@ export default function ContactarPage() {
           className="gf-ct-deco gf-ct-deco--1 gf-ct-if-scale"
           aria-hidden="true"
         >
-          <img src={`${IMG}/purple_bubble.png`} alt="" width={90} height={90} />
+          <img
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/purple_bubble.webp`}
+            alt=""
+            width={90}
+            height={90}
+          />
         </div>
         <div
           className="gf-ct-deco gf-ct-deco--2 gf-ct-if-bounce"
           aria-hidden="true"
         >
           <img
-            src={`${IMG}/orange_bubble-1.png`}
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/orange_bubble-1.webp`}
             alt=""
             width={70}
             height={70}
@@ -61,7 +70,9 @@ export default function ContactarPage() {
         </div>
         <ScrollFx ty={200} rx={-360} className="gf-ct-deco gf-ct-deco--3">
           <img
-            src={`${IMG}/orange_triangle2.png`}
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/orange_triangle2.webp`}
             alt=""
             width={150}
             height={120}
@@ -75,7 +86,9 @@ export default function ContactarPage() {
           className="gf-ct-deco gf-ct-deco--4"
         >
           <img
-            src={`${IMG}/orange_triangle-1.png`}
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/orange_triangle-1.webp`}
             alt=""
             width={190}
             height={150}
@@ -88,7 +101,9 @@ export default function ContactarPage() {
           className="gf-ct-deco gf-ct-deco--5"
         >
           <img
-            src={`${IMG}/orange_triangle-1.png`}
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/orange_triangle-1.webp`}
             alt=""
             width={190}
             height={150}
@@ -100,7 +115,14 @@ export default function ContactarPage() {
           minWidth={1025}
           className="gf-ct-deco gf-ct-deco--6"
         >
-          <img src={`${IMG}/purple_bubble.png`} alt="" width={90} height={90} />
+          <img
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/purple_bubble.webp`}
+            alt=""
+            width={90}
+            height={90}
+          />
         </ScrollFx>
         <ScrollFx
           tx={-200}
@@ -109,7 +131,9 @@ export default function ContactarPage() {
           className="gf-ct-deco gf-ct-deco--7"
         >
           <img
-            src={`${IMG}/orange_bubble-1.png`}
+            loading="lazy"
+            decoding="async"
+            src={`${IMG}/orange_bubble-1.webp`}
             alt=""
             width={70}
             height={70}

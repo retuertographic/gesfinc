@@ -37,45 +37,46 @@ const others: { title: string; href: string; image: string | null }[] = [
   {
     title: "Limpieza",
     href: withBase("/servicios/limpieza"),
-    image: "GESFINC-170509-121-300x200-1.jpg",
+    image: "GESFINC-170509-121-300x200-1.webp",
   },
   {
     title: "Mantenimiento",
     href: withBase("/servicios/mantenimiento"),
-    image: "GESFINC-170509-83-300x200-1.jpg",
+    image: "GESFINC-170509-83-300x200-1.webp",
   },
   {
     title: "Jardinería",
     href: withBase("/servicios/jardineria"),
-    image: "DSC_1833-300x200-1.jpg",
+    image: "DSC_1833-300x200-1.webp",
   },
   {
     title: "Seguros",
     href: withBase("/servicios/seguros"),
-    image: "Seguro-WEB-700x460-1.jpg",
+    image: "Seguro-WEB-700x460-1.webp",
   },
   {
     title: "Inmobiliaria",
     href: withBase("/inmobiliaria"),
-    image: "Inmobiliaria-WEB-700x460-1.jpg",
+    image: "Inmobiliaria-WEB-700x460-1.webp",
   },
   {
     title: "Certificados electrónicos",
     href: withBase("/servicios/certificados-electronicos"),
     image:
-      "certificados-digitales-eadministracion-publica-iesa-004-800x600-1.jpg",
+      "certificados-digitales-eadministracion-publica-iesa-004-800x600-1.webp",
   },
   {
     title: "Certificaciones energéticas",
     href: withBase("/servicios/certificaciones-energeticas"),
-    image: "GESFINC-170104-58-700x460-1.jpg",
+    image: "GESFINC-170104-58-700x460-1.webp",
   },
 ];
 
-function MoreButton({ href }: { href: string }) {
+function MoreButton({ href, about }: { href: string; about: string }) {
   return (
     <a className="gf-sv-btn" href={href}>
-      Más información <Icon name="arrow-right" />
+      Más información<span className="sr-only"> sobre {about}</span>{" "}
+      <Icon name="arrow-right" />
     </a>
   );
 }
@@ -104,15 +105,20 @@ export default function ServiciosPage() {
           </div>
           <div className="gf-sv-hero-art">
             <img
+              loading="eager"
+              decoding="async"
               className="gf-sv-hero-circle"
-              src={`${IMG}/service1_red_circle.png`}
+              src={`${IMG}/service1_red_circle.webp`}
               alt=""
               width={408}
               height={405}
             />
             <img
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
               className="gf-sv-hero-photo gf-sv-shadow"
-              src={`${IMG}/SLA_7464-700x460-1.jpg`}
+              src={`${IMG}/SLA_7464-700x460-1.webp`}
               alt=""
               width={680}
               height={447}
@@ -150,7 +156,10 @@ export default function ServiciosPage() {
               <li>Servicios</li>
             </ul>
           </div>
-          <MoreButton href={withBase("/servicios/administrador-de-fincas")} />
+          <MoreButton
+            href={withBase("/servicios/administrador-de-fincas")}
+            about="Administración de Fincas"
+          />
         </div>
         <div className="gf-sv-media">
           <ScrollDrift
@@ -159,8 +168,10 @@ export default function ServiciosPage() {
             style={{ left: -6, top: -90 }}
           >
             <img
+              loading="lazy"
+              decoding="async"
               className="gf-sv-shadow"
-              src={`${IMG}/SLA_7449-700x460-1.jpg`}
+              src={`${IMG}/SLA_7449-700x460-1.webp`}
               alt=""
               width={598}
               height={393}
@@ -172,8 +183,10 @@ export default function ServiciosPage() {
       <section className="gf-sv-row gf-sv-row--2">
         <div className="gf-sv-media gf-sv-media--wide">
           <img
+            loading="lazy"
+            decoding="async"
             className="gf-sv-circle"
-            src={`${IMG}/service1_red_circle.png`}
+            src={`${IMG}/service1_red_circle.webp`}
             alt=""
             width={418}
             height={415}
@@ -184,8 +197,10 @@ export default function ServiciosPage() {
             style={{ left: -112, top: -45 }}
           >
             <img
+              loading="lazy"
+              decoding="async"
               className="gf-sv-shadow"
-              src={`${IMG}/SLA_7464-700x460-1.jpg`}
+              src={`${IMG}/SLA_7464-700x460-1.webp`}
               alt=""
               width={598}
               height={393}
@@ -202,7 +217,10 @@ export default function ServiciosPage() {
               servicios muy específicos o puntuales.
             </p>
           </div>
-          <MoreButton href={withBase("/servicios/servicio-integral")} />
+          <MoreButton
+            href={withBase("/servicios/servicio-integral")}
+            about="Servicio Integral"
+          />
         </div>
       </section>
 
@@ -221,6 +239,7 @@ export default function ServiciosPage() {
           </div>
           <MoreButton
             href={withBase("/servicios/asesoria-juridica-integral")}
+            about="Asesoría Jurídica"
           />
         </div>
         <div className="gf-sv-media">
@@ -230,8 +249,10 @@ export default function ServiciosPage() {
             style={{ left: -6, top: -98 }}
           >
             <img
+              loading="lazy"
+              decoding="async"
               className="gf-sv-shadow"
-              src={`${IMG}/SLA_7474-700x460-1.jpg`}
+              src={`${IMG}/SLA_7474-700x460-1.webp`}
               alt=""
               width={598}
               height={393}
@@ -259,6 +280,7 @@ export default function ServiciosPage() {
                 aria-label={o.title}
               >
                 <img
+                  decoding="async"
                   src={o.image ? `${IMG}/${o.image}` : `${IMG}/default.svg`}
                   alt=""
                   loading="lazy"

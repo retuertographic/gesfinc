@@ -36,11 +36,12 @@ export function HeroGallery() {
         style={{ transform: `translateX(${-index * cell}px)` }}
       >
         {heroImages.map((src, i) => (
-          <img
+          <img decoding="async"
             key={src}
             src={src}
             alt=""
             loading={i === 0 ? "eager" : "lazy"}
+            fetchPriority={i === 0 ? "high" : "auto"}
             width={1170}
             height={548}
           />
@@ -137,7 +138,7 @@ export function ServicesCarousel() {
                 aria-label={i !== index ? svc.title : undefined}
               >
                 {svc.image && (
-                  <img
+                  <img decoding="async"
                     src={svc.image}
                     alt={svc.title}
                     loading="lazy"
@@ -149,10 +150,12 @@ export function ServicesCarousel() {
           </div>
         </div>
         <div key={`t${index}`} className="gf-carousel-text gf-fade">
-          <h3>{s.title}</h3>
-          <a href={s.href}>Más información</a>
+          <h3 className="gf-carousel-title">{s.title}</h3>
+          <a href={s.href}>
+            Más información<span className="sr-only"> sobre {s.title}</span>
+          </a>
         </div>
-        <div className="gf-dots" role="tablist" aria-label="Servicios">
+        <div className="gf-dots" role="group" aria-label="Elegir servicio">
           {services.map((svc, i) => (
             <button
               key={svc.title}

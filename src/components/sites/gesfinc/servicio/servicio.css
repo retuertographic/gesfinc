@@ -109,7 +109,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 30.6px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-sd-intro-text a {
   color: #000;
@@ -155,7 +155,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 30.6px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-sd-row-text > .gf-sd-row-copy:first-child {
   margin-top: 20px;
@@ -176,7 +176,7 @@
   margin-top: 20px;
   padding: 12px 24px;
   border-radius: 3px;
-  background: rgb(251, 7, 7);
+  background: rgb(210, 12, 12);
   color: #fff !important;
   font-family: var(--font-roboto), sans-serif;
   font-size: 15px;
@@ -239,7 +239,7 @@
   font-family: var(--gf-reg);
   font-size: 17px;
   line-height: 28.9px;
-  color: rgb(128, 130, 145);
+  color: rgb(98, 100, 115);
 }
 .gf-sd-others {
   margin-top: 40px;
@@ -292,7 +292,7 @@
   line-height: 21.6px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgb(153, 153, 153);
+  color: rgb(112, 112, 112);
 }
 
 /* ======================= Petición de presupuesto ======================= */

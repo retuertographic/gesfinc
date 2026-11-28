@@ -24,16 +24,16 @@ export const metadata: Metadata = {
 // Three columns of two photos each (source order, column by column).
 const team: [string, number, number][][] = [
   [
-    ["DSC_1673-300x200-1.jpg", 300, 200],
-    ["SLA_7464-700x460-1.jpg", 700, 460],
+    ["DSC_1673-300x200-1.webp", 300, 200],
+    ["SLA_7464-700x460-1.webp", 700, 460],
   ],
   [
-    ["SLA_7492-300x200-1.jpg", 300, 200],
-    ["SLA_7484-300x200-1.jpg", 300, 200],
+    ["SLA_7492-300x200-1.webp", 300, 200],
+    ["SLA_7484-300x200-1.webp", 300, 200],
   ],
   [
-    ["DSC_1833-300x200-1.jpg", 300, 200],
-    ["SLA_7495-300x200-1.jpg", 300, 200],
+    ["DSC_1833-300x200-1.webp", 300, 200],
+    ["SLA_7495-300x200-1.webp", 300, 200],
   ],
 ];
 
@@ -82,6 +82,7 @@ export default function FilosofiaPage() {
               <div key={col[0][0]}>
                 {col.map(([src, w, h]) => (
                   <img
+                    decoding="async"
                     key={src}
                     src={`${IMG}/${src}`}
                     alt=""

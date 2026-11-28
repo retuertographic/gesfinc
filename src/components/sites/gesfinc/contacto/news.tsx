@@ -16,7 +16,7 @@ const newsPosts: NewsPost[] = [
   {
     title: "Próximamente: Juntas por videoconferencia",
     href: withBase("/proximamente-juntas-por-videoconferencia"),
-    image: "AdobeStock_340095251-Videoconferencia-270x154-1.jpg",
+    image: "AdobeStock_340095251-Videoconferencia-270x154-1.webp",
     width: 270,
     height: 154,
     excerpt:
@@ -27,7 +27,7 @@ const newsPosts: NewsPost[] = [
     href: withBase(
       "/modelos-fiscales-exigibles-a-las-comunidades-de-propietarios",
     ),
-    image: "Anuncio-347.jpg",
+    image: "Anuncio-347.webp",
     width: 656,
     height: 912,
     excerpt:
@@ -36,7 +36,7 @@ const newsPosts: NewsPost[] = [
   {
     title: "App Gesfinc",
     href: withBase("/app-gesfinc"),
-    image: "APP-GESFINC-43685274_xxl-768x360.jpg",
+    image: "APP-GESFINC-43685274_xxl-768x360.webp",
     width: 768,
     height: 360,
     excerpt:
@@ -46,7 +46,7 @@ const newsPosts: NewsPost[] = [
     // The source post's title says 2017 while its slug says 2018; both kept as on the source.
     title: "Felices fiestas, y próspero año 2017",
     href: withBase("/felices-fiestas-y-prospero-ano-2018"),
-    image: "Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-768x360.jpg",
+    image: "Cabecera-Web-Gesfing-Navidad-2018-1170x548-px-100-768x360.webp",
     width: 768,
     height: 360,
     excerpt:
@@ -55,7 +55,7 @@ const newsPosts: NewsPost[] = [
   {
     title: "GesFinc por el Deporte Canario",
     href: withBase("/gesfinc-por-el-deporte-canario"),
-    image: "IMG_7278-1024x768-1-768x576.jpg",
+    image: "IMG_7278-1024x768-1-768x576.webp",
     width: 768,
     height: 576,
     excerpt:
@@ -70,7 +70,7 @@ function NewsCard({ post, order }: { post: NewsPost; order: number }) {
   return (
     <article className="gf-ct-post" style={{ order }}>
       <div className="gf-ct-post-img">
-        <img
+        <img decoding="async"
           src={`${IMG}/${post.image}`}
           alt=""
           width={post.width}
