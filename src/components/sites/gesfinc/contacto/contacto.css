@@ -411,14 +411,14 @@
 .gf-ct-post-cat a {
   color: rgb(0, 42, 143);
 }
-.gf-ct-post h5 {
+.gf-ct-post h2 {
   margin: 0 0 10px;
   font-family: var(--font-cabin), sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 35.2px;
 }
-.gf-ct-post h5 a {
+.gf-ct-post h2 a {
   color: #000;
   transition: color 0.2s;
 }
